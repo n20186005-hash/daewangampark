@@ -1,0 +1,889 @@
+{
+  "meta": {
+    "title": "Daewangam Park (대왕암공원) | Dong-gu, Ulsan, South Korea · Coastal cliff park, 303 m sea bridge & King Munmu's guardian-dragon legend",
+    "description": "The complete guide to Daewangam Park (Korean: 대왕암공원): a coastal cliff park on the East Sea in Dong-gu, Ulsan. A 303 m sea suspension bridge (출렁다리) links the pine-forest shore to the jagged Daewangam islet, framed by a pine forest trail, the Ulgi Lighthouse and East-Sea sunrises. It carries the legend of King Munmu of Silla, who became a 'guardian dragon' to protect the country. The park is open 24 hours and free; the bridge is free to cross. Hours, transport, history, photo spots and visitor reviews all in one place."
+  },
+  "header": {
+    "siteName": "Daewangam Park",
+    "home": "Home",
+    "visit": "Visit",
+    "transport": "Transport",
+    "lodging": "Lodging",
+    "history": "History",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "map": "Map",
+    "backToHome": "Back to home"
+  },
+  "common": {
+    "changeLanguage": "Change language",
+    "toggleTheme": "Toggle theme"
+  },
+  "nonprofitBanner": {
+    "text": "This is an independent non-profit guide put together by keen travellers, offering the most objective information on visiting Daewangam Park — free of charge and affiliated with no organization.",
+    "dataSource": "All attraction information on this site is checked against public materials from Ulsan Metropolitan City, Dong-gu Ulsan, and the Korea Tourism Organization (VisitKorea), with no commercial recommendations."
+  },
+  "mission": {
+    "title": "Our mission",
+    "text": "So that every traveller who comes to Ulsan doesn't miss this pine forest and legend on the East-Sea cliff, we gathered scattered official information into one guide — just to give you the purest experience of 'listening to the waves, gazing at the rocks, reading the history'."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "region": "Ulsan Metropolitan City",
+    "city": "Dong-gu",
+    "current": "Daewangam Park"
+  },
+  "stickyNav": {
+    "facts": "Key facts",
+    "etiquette": "Good manners",
+    "route": "Half-day route",
+    "transport": "Transport",
+    "lodging": "Lodging",
+    "visit": "Visit tips",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Daewangam Park (대왕암공원)",
+    "subtitle": "A coastal cliff park on the East Sea in Dong-gu, Ulsan. A 303 m sea suspension bridge (출렁다리) soars across the water, linking the pine-forest shore to the jagged Daewangam islet. Legend says King Munmu of Silla became a 'guardian dragon' to protect the country, and the dragon's eye hides among these waves. Pine, lighthouse and sunrise meet here; the park is free and open 24 hours.",
+    "rating": "4.6 (5,406)",
+    "reviewCount": "5,406 reviews",
+    "hours": "24 hours (park)",
+    "openMaps": "View location on Google Maps",
+    "mapsUrl": "https://maps.app.goo.gl/VzccMpX7nCxzrbFdA",
+    "legend": {
+      "quote": "King Munmu of Silla commanded to be buried at sea, that he might become a guardian dragon and protect the nation forever — and these very rocks are said to be that dragon's form.",
+      "attribution": "— Legend of King Munmu's Guardian Dragon"
+    },
+    "tags": ["Coastal cliff park", "Free admission", "303 m sea bridge"],
+    "routeCta": {
+      "label": "Plan your route",
+      "href": "#transport"
+    },
+    "historyCta": {
+      "label": "Learn its history",
+      "href": "#history"
+    },
+    "quickFacts": [
+      { "icon": "🔭", "label": "Highlight", "value": "Sea bridge" },
+      { "icon": "🆓", "label": "Admission", "value": "Free" },
+      { "icon": "🕘", "label": "Hours", "value": "Open 24 hours" }
+    ],
+    "navCta": { "label": "📍 Get directions", "href": "#transport" },
+    "photoCta": { "label": "📸 Photo spots", "href": "#gallery" },
+    "liveInfo": { "weather": "Current weather", "sunset": "Today's sunset" },
+    "sunsetPlanner": {
+      "eyebrow": "Golden Hour Calculator · Light tool",
+      "title": "Based on today's sunset, arriving about 60 minutes earlier lets you catch the softest diffuse light and the blue-hour sky — perfect for shooting the bridge, Daewangam rock and the East-Sea sunset.",
+      "note": "The park faces the sea on three sides and is wide open; afternoon to dusk gives the warmest light. On weekends or fine weather, allow extra buffer for crowds.",
+      "seaGlare": "Sunrise tip: Daewangam faces the East Sea and is a popular Ulsan sunrise spot. The first light on the rocks and cables is the golden window; winter mornings are cold — mind the sea breeze.",
+      "arriveLabel": "Suggested arrival",
+      "blueHourLabel": "Blue hour",
+      "lightCaption": "Light data computed live by Open-Meteo"
+    }
+  },
+  "quickFactsDashboard": {
+    "title": "Know Daewangam in numbers · Data board",
+    "subtitle": "A few numbers to understand this pine forest park on the East-Sea cliff.",
+    "items": [
+      { "icon": "🌉", "label": "Bridge / Bridge", "value": "303 m long", "note": "A 303 m sea suspension bridge (출렁다리) links the shore to the Daewangam islet — Ulsan's first suspension bridge and its most recognizable landmark, free to cross and gaze over the sea." },
+      { "icon": "🐉", "label": "Legend / Legend", "value": "Munmu's dragon", "note": "King Munmu of Silla is said to have commanded burial at sea to become a dragon guarding the nation; Daewangam is the vessel of this 'guardian dragon' legend and Korea's coastal-defence memory." },
+      { "icon": "🌲", "label": "Landscape / Landscape", "value": "Pine cliff coast", "note": "A pine forest trail runs along coastal cliffs on three sides of the East Sea, with sea-eroded rocks like the Hat Rock and the Phallus Rock, and a view to the Ulgi Lighthouse." },
+      { "icon": "🗼", "label": "Lighthouse / Lighthouse", "value": "Ulgi Lighthouse", "note": "The Ulgi Lighthouse (울기등대) inside the park is among the earliest modern lighthouses in Korea, and a classic spot for East-Sea and sunrise views." },
+      { "icon": "📍", "label": "Coordinates / Coords", "value": "35°32′N, 129°21′E", "note": "Plus Code: FCRQ+XR, Ulsan. Address: 95 Deungdae-ro, Dong-gu, Ulsan, South Korea." },
+      { "icon": "🎟️", "label": "Admission / Admission", "value": "Free", "note": "The park is free and open 24 hours; the sea bridge is also free to cross, managed by Dong-gu, Ulsan — easy to drop by anytime." }
+    ]
+  },
+  "hiddenRules": {
+    "title": "Tips for visiting the coastal cliff park",
+    "subtitle": "Daewangam faces the sea on three sides, by cliff and wave, with an elastic bridge. Think through safety, timing and budget, and the experience upgrades from 'rush to check in' to 'relaxed visit'.",
+    "highlights": [
+      { "icon": "👟", "label": "Footwear safety", "value": "Wear non-slip flats", "note": "Coastal rocks and wooden decks get slippery when wet — wear non-slip shoes, avoid heels; sea breeze and dew are strong, watch children and seniors." },
+      { "icon": "🚧", "label": "By the sea & cliff", "value": "Don't climb railings", "note": "Beyond the bridge and cliff railings is the East Sea — don't lean on or climb over railings, keep a safe distance when拍照, and follow on-site guidance and bridge flow control." },
+      { "icon": "🌧️", "label": "Weather & routine", "value": "Bring wind & water", "note": "The coast is windy, hot in summer, cold in winter — bring a windbreaker and water; the bridge may close temporarily in strong wind or thunderstorms, so check notices before going." }
+    ],
+    "panels": [
+      {
+        "q": "Is Daewangam Park paid?",
+        "a": "The park is free and open 24 hours; the sea bridge is also free to cross — no ticket or reservation needed. Some parking lots may charge; follow on-site signs.",
+        "items": ["Park area is free and open anytime.", "Bridge is free to cross; flow may be limited by weather."]
+      },
+      {
+        "q": "Is the bridge safe? Easy with kids or seniors?",
+        "a": "The bridge is a proper tourist facility with railings — structurally safe; but the deck sways with the wind and it is windy by the sea, so hold children's hands, support seniors and avoid windy times. The pine trail is gentle; wheelchairs and strollers can reach some viewpoints via the main path."
+      },
+      {
+        "q": "Can I visit in rain or strong wind?",
+        "a": "Light rain is fine, but rocks and decks are slippery and the sea breeze is strong — wear non-slip shoes and hold the railings. In strong wind, thunderstorms or maintenance (e.g. the bridge's 2nd-Tuesday monthly closure) follow closure notices and come another day."
+      }
+    ]
+  },
+  "complianceGuide": {
+    "title": "Daewangam · Etiquette & public-environment guide",
+    "subtitle": "This is both a visitor coastal park and a seaside greenbelt where Ulsan citizens walk and exercise. Following these rules is double respect for the natural coast and for others.",
+    "rules": [
+      {
+        "badge": "🚮",
+        "title": "Take your litter with you",
+        "text": "The park is by the sea with limited bins — bring a small bag, take it away when you leave, especially cigarette butts, plastics and food scraps, keeping the pine forest and decks clean."
+      },
+      {
+        "badge": "🔇",
+        "title": "Quiet & courtesy, avoid peaks",
+        "text": "The coast is open and echoey — lower your voice, no loud music, leave room for those taking photos and pausing."
+      },
+      {
+        "badge": "🚭",
+        "title": "No smoking & fire safety",
+        "text": "Some pine areas and passages are no-smoking — obey signs, don't smoke among wooden fixtures or crowds."
+      },
+      {
+        "badge": "🪨",
+        "title": "Respect the coastal landforms",
+        "text": "Daewangam, the Hat Rock and the Phallus Rock are public natural heritage — don't scratch, climb or act dangerously, so this East-Sea landscape stays safe and vivid."
+      }
+    ]
+  },
+  "higashiyamaRoute": {
+    "title": "Custom itinerary: Daewangam half-day route",
+    "subtitle": "Not just 'who it suits' — a walkable half-day line. Centred on the pine coast and the bridge, it links the lighthouse, rocks and sunrise seascape.",
+    "steps": [
+      { "title": "[Start] Pine forest trail & entrance", "meta": "Warm-up · ~30 min", "text": "From the entrance, stroll the pine forest trail; sea wind through the trees, waves in your ears — align your pace with the East Sea, then head toward the bridge.", "tips": ["Morning/dusk light is best, fewer crowds."] },
+      { "title": "[Star] 303 m sea suspension bridge", "meta": "Core experience · ~40 min", "text": "Walk the 303 m bridge; the deck sways with the sea breeze, the East Sea below, the Daewangam islet at the end. This is Daewangam's most photogenic partner and the home of the 'guardian dragon' legend.", "tips": ["Bridge is free to cross; allow time for photos and pauses."] },
+      { "title": "[Extend] Daewangam rock & sea rocks", "meta": "Local story · ~40 min", "text": "Walk around to Daewangam rock and sea-eroded forms like the Hat Rock and Phallus Rock; read the legend of King Munmu's 'guardian dragon' from the plaques, collecting nature and memory together.", "tips": ["Rocks are slippery; stay on hard ground with company."] },
+      { "title": "[Refuel] Rest area & light meal", "meta": "Culture break · ~40 min", "text": "Refuel at rest areas and snack spots near the park, then look back at the lighthouse and horizon, gathering pine, bridge and legend into one walk.", "tips": ["On-site amenities are modest — bring your own water."] },
+      { "title": "[End] Ulgi Lighthouse or Ilsan Beach", "meta": "Wrap · ~60 min+", "text": "If energy allows, visit the Ulgi Lighthouse for an East-Sea overlook, or extend to nearby Ilsan Beach; otherwise walk back, wrapping the route into a complete 'pine + bridge + rock + lighthouse' half-day pack.", "tips": ["Lighthouse and sunrise are best after dawn — save the seascape for the finish."] }
+    ],
+    "disclaimer": "The route emphasizes a 'works even if you just follow it' loop; if you only want the bridge, keep the first two stops and treat the rocks and rest as optional add-ons."
+  },
+  "intro": {
+    "title": "Getting to know Daewangam Park",
+    "description": "Daewangam Park (Korean: 대왕암공원) sits on the East Sea in Dong-gu, Ulsan — a pine forest park built along coastal cliffs. A 303 m sea suspension bridge (출렁다리) links the jagged Daewangam islet to the shore; the bridge is free to cross and gaze over the sea. Facing the East Sea on three sides, with pines and waves and the Ulgi Lighthouse standing among them, it carries the legend of King Munmu of Silla, who became a 'guardian dragon' to protect the country after death. 'Daewang (대왕)' in the name refers to this Unified Silla monarch, King Munmu.",
+    "visitGuide": {
+      "title": "Visitor guide",
+      "eyebrow": "Practical planning",
+      "description": "Daewangam is a free coastal park, open 24 hours with a free bridge — no gate (the bridge has its own hours and closures). The best approach isn't 'wander by day' but reverse-plan around light: morning for the East-Sea sunrise and the softest bridge-cable shots, weekdays to read the legend and rocks at leisure. Modest facilities and low commercial feel are exactly what make it charming.",
+      "items": [
+        "Best at morning or dusk: coastal light is softest, bridge and Daewangam most photogenic.",
+        "Best angles are the middle of the bridge and the sea-side railing.",
+        "From central Ulsan, take a city bus to Ilsan (일산) then walk about 15–20 min to the entrance.",
+        "Few on-site amenities — get water, restrooms and snacks at the entrance rest area first."
+      ]
+    },
+    "alsoKnownAs": {
+      "title": "Highlights",
+      "items": [
+        "303 m sea suspension bridge, free to cross, soaring over the sea — Ulsan's most recognizable coastal landmark",
+        "Vessel of King Munmu's 'guardian dragon' legend, where coastal-defence memory meets natural landforms",
+        "Pine forest cliff trail on three sides of the East Sea, with views to the Ulgi Lighthouse and sunrise",
+        "Sea-eroded rocks like the Hat Rock and Phallus Rock, an open-air geology lesson with plaques",
+        "Park open 24 hours free, bridge free, managed by Dong-gu, Ulsan — visit anytime"
+      ]
+    }
+  },
+  "transportSection": {
+    "title": "Transport & getting here",
+    "subtitle": "Combining arrival into Ulsan, in-city transfers, walking/cycling, parking & charging for a clearer Daewangam plan.",
+    "overviewTitle": "After arriving in Ulsan",
+    "overviewText": "Daewangam Park is on the East Sea in Dong-gu, Ulsan — the city's most recognizable coastal park. The easiest external transport is KTX to Ulsan (Ulsan Station / Taehwagang Station) from Seoul or Busan, or an intercity bus to Ulsan; once in Dong-gu, a city bus or taxi from Ilsan (일산) takes about 10–20 min. The park faces the sea on three sides; a short walk from the drop-off reaches the pine trail.",
+    "overviewText2": "Daewangam is a seaside greenbelt with attached parking. Plan transport, parking and walking together — especially with seniors, kids or luggage, parking then walking saves hassle.",
+    "arrivalTitle": "Remember before you go",
+    "arrivalItems": [
+      "The park is on the East Sea by Ilsan, Dong-gu; walk about 15–20 min from Ilsan Beach to the entrance.",
+      "The bridge is free to cross but closed on the 2nd Tuesday monthly and may close in strong wind/thunderstorms — check ahead.",
+      "Weekends and fine weather draw crowds — avoid peaks; parking is mostly paid, arrive early."
+    ],
+    "modes": [
+      {
+        "label": "KTX / Intercity bus (to Ulsan)",
+        "icon": "🚄",
+        "title": "External transport to Ulsan",
+        "description": "Easiest for most — KTX from Seoul or Busan to Ulsan (Ulsan Station / Taehwagang Station), or intercity bus to Ulsan, the classic way to Daewangam.",
+        "details": [
+          "KTX from Seoul to Ulsan about 2–2.5 hr (by train).",
+          "Then city bus or taxi to Ilsan, Dong-gu, about 30–50 min.",
+          "Use T-money / transport card; bus and taxi connect easily."
+        ],
+        "steps": [
+          { "n": "1", "t": "Take KTX or intercity bus to Ulsan." },
+          { "n": "2", "t": "Transfer by city bus or taxi to Ilsan." },
+          { "n": "3", "t": "Walk to the pine entrance of Daewangam Park." }
+        ]
+      },
+      {
+        "label": "City bus (to Ilsan / Daewangam)",
+        "icon": "🚌",
+        "title": "City bus to the east coast",
+        "description": "Flexible — take a Ulsan city bus to Ilsan (일산), then walk to Daewangam Park.",
+        "details": [
+          "City bus from Ulsan Station or Taehwagang to Ilsan Beach area about 30–50 min.",
+          "Then coastal trail walk to the park about 15–20 min.",
+          "Use T-money; check real-time arrival on a map app."
+        ],
+        "steps": [
+          { "n": "1", "t": "Take a city bus to Ilsan / East Sea." },
+          { "n": "2", "t": "Walk to Daewangam Park entrance." },
+          { "n": "3", "t": "Enter via the pine trail." }
+        ]
+      },
+      {
+        "label": "Ilsan area (walk + shuttle)",
+        "icon": "🚉",
+        "title": "Closest living area",
+        "description": "Ilsan is the nearest living area to Daewangam; a short shuttle bus or taxi (about 10–20 min) reaches it — good for light packers.",
+        "details": [
+          "Ilsan buses are frequent, closest to the park.",
+          "Transfer about 10–20 min to the main sight.",
+          "Mornings and weekdays are best to avoid crowds."
+        ],
+        "steps": [
+          { "n": "1", "t": "Alight at Ilsan area by bus." },
+          { "n": "2", "t": "Transfer by bus or taxi about 10–20 min." },
+          { "n": "3", "t": "Reach the bridge and pine coast." }
+        ]
+      },
+      {
+        "label": "Drive (parking / charging)",
+        "icon": "🅿️",
+        "title": "Via East Sea Road · nearby parking",
+        "description": "Good with seniors/kids/luggage or touring Ulsan; attached parking near the park (mostly paid).",
+        "details": [
+          "Navigate to '대왕암공원' or '95 Deungdae-ro, Dong-gu, Ulsan'.",
+          "Attached lot is large but fills on weekends/holidays.",
+          "Some public lots have EV chargers; drive slowly, park neatly."
+        ],
+        "steps": [
+          { "n": "1", "t": "Set navigation to 'Daewangam Park'." },
+          { "n": "2", "t": "Park in the attached lot, walk in." },
+          { "n": "3", "t": "Avoid 11:00–19:00 peak to save parking time." }
+        ]
+      },
+      {
+        "label": "Taxi / ride-hail",
+        "icon": "🚕",
+        "title": "Door-to-door",
+        "description": "Easiest with luggage, kids/seniors or late arrival.",
+        "details": [
+          "Taxi from Ulsan Station or city center to Daewangam about 30–50 min, metered.",
+          "Walk in from the drop-off near the park.",
+          "Taxis queue on busy/rainy days — book via Kakao T with buffer."
+        ],
+        "steps": [
+          { "n": "1", "t": "Book via Kakao T etc." },
+          { "n": "2", "t": "Tell the driver '대왕암공원'." },
+          { "n": "3", "t": "Alight near the park, walk in." }
+        ]
+      },
+      {
+        "label": "Walk (pine coast)",
+        "icon": "🚶",
+        "title": "From Ilsan coast to the park",
+        "description": "If already at Ilsan Beach or East Sea Road, walking is the most natural way to observe the greenbelt and pine landmark.",
+        "details": [
+          "From Ilsan coastal trail, walk about 15–20 min to the park.",
+          "Pass pines, cliffs and lighthouse — stroll and explore.",
+          "Flat surface; wear comfy shoes, watch kids and belongings."
+        ]
+      },
+      {
+        "label": "Cycle / greenway",
+        "icon": "🚲",
+        "title": "Coastal slow ride",
+        "description": "The most relaxing way to feel the East Sea and pine atmosphere.",
+        "details": [
+          "East Sea Road is flat — walk to link bridge, lighthouse and coastal trail.",
+          "Park bikes at racks; don't ride onto the bridge or crowded areas.",
+          "About 15–20 min from Ilsan to the park, pines along the way."
+        ]
+      }
+    ],
+    "parking": {
+      "title": "Parking & charging",
+      "note": "Daewangam has attached parking (mostly paid); below are the nearest main options. Rates and spaces vary by season/time — follow on-site signs.",
+      "colOption": "Option",
+      "colDistance": "Distance",
+      "colPrice": "Price",
+      "options": [
+        { "name": "Daewangam Park attached lot", "distance": "~100–300 m to entrance", "price": "Paid public, fills in peak" },
+        { "name": "Ilsan Beach roadside lot", "distance": "~300–800 m", "price": "Public/paid, more spaces but tight in peak" },
+        { "name": "Nearby street temporary", "distance": "~200–500 m", "price": "Roadside/small, fewer spots, easier on weekdays" },
+        { "name": "Dong-gu park-and-ride", "distance": "~1.5–3 km", "price": "Park-and-ride discount, needs transfer" },
+        { "name": "Drop-off (near park)", "distance": "~50–100 m", "price": "Drop only, no spaces" }
+      ],
+      "disclaimer": "Roads near the park clog on holidays and fine weather — don't block bus/fire lanes. EV chargers are mostly in public lots; rates/limits may change — check posted signs."
+    },
+    "driverFaqTitle": "Transport Q&A",
+    "driverFaq": [
+      { "q": "Is there parking near Daewangam?", "a": "An attached lot (mostly paid) is on-site, walkable. Fills easily on weekends/holidays — arrive early or prefer transit." },
+      { "q": "What's the closest parking?", "a": "The attached lot is ~100–300 m away; Ilsan Beach lot is ~300–800 m, more spaces but tight in peak." },
+      { "q": "Any roadside parking?", "a": "Little. Roads are narrow and clog on holidays — don't park long on the street; use proper lots and transit." },
+      { "q": "Should I drive to Daewangam?", "a": "Unless you need parking, don't. Weekends and fine weather are congested; walking or transit is smoother. If driving, park then walk in." },
+      { "q": "Do you recommend public transport?", "a": "Strongly. KTX/bus to Ulsan, then city bus to Ilsan and walk about 15–20 min to the park — easiest. Address: 95 Deungdae-ro, Dong-gu, Ulsan, South Korea." },
+      { "q": "What's the best way to get here?", "a": "For stability, transit wins: KTX/bus to Ulsan, transfer. If driving, treat parking and transfer as part of the plan, not 'park at the door'." }
+    ],
+    "localTipsTitle": "Practical visiting tips",
+    "localTips": [
+      "Morning and dusk remain golden; set 'arrive 60 min before sunset' as your baseline for the best bridge-and-rock sea reflections.",
+      "Weekends and fine weather draw crowds — buffer and avoid peaks with kids or gear.",
+      "Pair Daewangam with the Ulgi Lighthouse and Ilsan Beach; a single stop undervalues its coast and legend."
+    ],
+    "mapsCta": "View map & route",
+    "mapsUrl": "https://maps.app.goo.gl/VzccMpX7nCxzrbFdA",
+    "bestTime": {
+      "title": "Best time to arrive",
+      "text": "Daewangam is open 24 hours, but the photo ceiling is the sunrise and dusk light window. Arrive about 60 min before sunset; if weather hurts photos, shift focus to the pine trail or lighthouse overlook."
+    }
+  },
+  "officialManagement": {
+    "title": "About this coastal park",
+    "text": "Daewangam Park is on the East Sea in Dong-gu, Ulsan — a citizen coastal park grown from seaside woodland and sea-eroded landforms, maintained by Dong-gu, Ulsan as public space. It has long been a seaside living-room shared by citizens strolling, travellers pilgrimaging and families, and is one of Ulsan's 'pine, bridge and legend' city cards."
+  },
+  "humanities": {
+    "title": "Humanities & coastal defence: from King Munmu to the guardian dragon",
+    "subtitle": "Put Unified Silla history, the sea-dragon legend, the modern bridge engineering and the sea-eroded landforms on one timeline to truly understand why this park is more than 'pretty cliffs'."
+  },
+  "knowledge": {
+    "title": "History & origin of Daewangam Park",
+    "sections": [
+      {
+        "id": "history",
+        "title": "King Munmu of Silla & the sea dragon",
+        "content": "Daewangam's name comes from King Munmu (문무왕), the 30th ruler of Silla. Records say he commanded burial at sea to become a dragon guarding the nation against invaders; these East-Sea rocks are seen as the embodiment of the 'guardian dragon', carrying Korea's coastal-defence memory and the achievements of Unified Silla."
+      },
+      {
+        "id": "name",
+        "title": "The name 'Daewangam'",
+        "content": "'Daewang (대왕)' directly refers to King Munmu of Unified Silla. The Daewangam islet and the surrounding legend plaques tie the place name closely to the king's dragon legend, turning a natural landscape into a readable historical text."
+      },
+      {
+        "id": "bridge",
+        "title": "303 m sea suspension bridge",
+        "content": "The sea suspension bridge (출렁다리) linking shore and islet is 303 m long — Ulsan's first suspension bridge and its most iconic modern structure. The deck sways with the sea breeze; it is free to cross and gaze over the sea, the park's most photogenic spot."
+      },
+      {
+        "id": "lighthouse",
+        "title": "Ulgi Lighthouse (울기등대)",
+        "content": "The Ulgi Lighthouse inside the park is among the earliest modern lighthouses in Korea, standing on the East Sea — a symbol of maritime safety and a classic spot for sunrise and seascape, forming the skyline with the pines and bridge."
+      },
+      {
+        "id": "scenery",
+        "title": "Pine coast & sunrise",
+        "content": "Daewangam faces the East Sea on three sides, with a pine trail along the cliffs, wind through the trees and waves in your ears. Facing east, it is a popular Ulsan sunrise spot; the first light on the rocks and cables is the golden window."
+      },
+      {
+        "id": "geopark",
+        "title": "Sea-eroded rocks & geology class",
+        "content": "The park shows sea-eroded rocks like the Hat Rock and Phallus Rock, with official plaques — an open-air coastal geology class. Together with Daewangam they tell the millennia-long dialogue of waves and stone, a living lesson where nature and culture meet."
+      },
+      {
+        "id": "legend",
+        "title": "The guardian dragon today",
+        "content": "King Munmu's 'guardian dragon' legend has not faded with history but is retold through Daewangam, the plaques and citizens' walks. It lets the public sense what this land went through while visiting — exactly the value a non-profit science site should amplify."
+      }
+    ],
+    "didYouKnow": {
+      "title": "Did you know?",
+      "text": "Daewangam is more than a coastal park — it is an open-air classroom of Korea's coastal-defence memory and folk legend: from King Munmu's 'guardian dragon', to the 303 m sea bridge, to the Ulgi Lighthouse and sea rocks, land and legend written into one East-Sea cliff."
+    }
+  },
+  "sitePlaques": {
+    "title": "Reading the on-site signs",
+    "subtitle": "What's worth reading slowly on-site isn't the check-in board, but the official plates and maps explaining 'why this rock is here'.",
+    "locationLabel": "On-site location",
+    "intro": "The readings below are based on Daewangam, bridge and lighthouse introductions, legend notes and coastal guides set by Ulsan Metropolitan City and Dong-gu, turning visible-but-unread info into understandable English science.",
+    "items": [
+      {
+        "id": "monument",
+        "badge": "Park history plate",
+        "title": "Daewangam Park & the East Sea",
+        "koTitle": "대왕암공원 연혁",
+        "koTitleZh": "Daewangam Park history",
+        "location": "Park main entrance",
+        "body": "Such plates usually give the key background: Daewangam as an East-Sea coastal park and its link to King Munmu's 'guardian dragon' legend. Reading it is lesson one in using this coastal landmark."
+      },
+      {
+        "id": "signboard",
+        "badge": "Bridge guide (KO/EN)",
+        "title": "303 m sea suspension bridge",
+        "koTitle": "출렁다리 안내",
+        "koTitleZh": "Bridge guide",
+        "location": "Bridge entrance",
+        "body": "Plates stress Daewangam's status as a sea-bridge landmark and remind visitors: half its charm is the open sea view, half the real East-Sea waves below. They explain clearly 'why a suspension bridge'."
+      },
+      {
+        "id": "wooden",
+        "badge": "Ulgi Lighthouse guide",
+        "title": "Among Korea's earliest lighthouses",
+        "koTitle": "울기등대 안내",
+        "koTitleZh": "Ulgi Lighthouse guide",
+        "location": "Lighthouse viewing area",
+        "body": "The map explains 'why this is a navigation hub'. The Ulgi Lighthouse uses the East-Sea cliff as an early route marker; with the bridge, Daewangam's design logic is clear — coastal defence and public recreation coexist."
+      },
+      {
+        "id": "dongporu",
+        "badge": "Guardian-dragon marker",
+        "title": "King Munmu & the sea dragon",
+        "koTitle": "호국룡 안내",
+        "koTitleZh": "Guardian dragon legend",
+        "location": "Toward Daewangam islet",
+        "body": "Set by Dong-gu, Ulsan, marking Daewangam's link to King Munmu's 'guardian dragon' legend. It reminds every visitor: this rock connects Korea's most moving coastal-defence legend with its most transparent sea experience."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Photo gallery",
+    "subtitle": "From the open-sea view of the 303 m bridge, the jagged Daewangam islet to the Ulgi Lighthouse sunrise — the visual beauty of Daewangam Park.",
+    "photoAlt": "Daewangam Park",
+    "photoAlts": [
+      "Daewangam panorama, pine coast and East-Sea cliffs.",
+      "Quiet pine trail at dawn, best for slow coastal details.",
+      "Golden dusk on the bridge, sea reflection like a mirror.",
+      "Close-up of railings and cables, fully open.",
+      "Overhead shot from the bridge, East-Sea waves and islet below.",
+      "Aerial view of park and coastal greenbelt landscape.",
+      "Open-sea view from the bridge, horizon stretching beneath your feet.",
+      "Family strolling the trail — great for a slow family visit.",
+      "Blue-and-white info signs echoing the coastal-defence theme.",
+      "Bridge cables as leading line, rocks and skyline in one frame.",
+      "Sea-side of the bridge, one of the most photogenic spots.",
+      "Daewangam islet in the distance, home of the guardian dragon.",
+      "Warm dusk deck, west light drawing gold on the cables.",
+      "Bridge and East Sea together, best window dawn to dusk.",
+      "Ulgi Lighthouse as a streetscape subject, coastal-defence flavour.",
+      "High panorama: 'pine–bridge–rock–lighthouse' in one frame.",
+      "Bridge lights at night, Daewangam a quiet sea corner.",
+      "Warm-toned trail, public space gently held by nature.",
+      "Lit railings and deck at night — a photographer's golden combo.",
+      "Daewangam sunrise, first light spreading on the rocks.",
+      "Looking back from the trail, long bridge over the East Sea.",
+      "Coastal greenbelt in morning mist, calm and open.",
+      "Sunset blue hour, bridge and distant hills as silhouette."
+    ],
+    "viewAll": "View location on Google Maps",
+    "showMore": "Show more photos",
+    "mapsUrl": "https://maps.app.goo.gl/VzccMpX7nCxzrbFdA"
+  },
+  "reviews": {
+    "title": "Visitor reviews",
+    "declaration": "Visitor feedback is available on Google Maps (external link).",
+    "featuredTitle": "Visitor quotes",
+    "featuredSubtitle": "A few short lines that capture Daewangam's character.",
+    "moreReviews": "View on Google Maps",
+    "mapsUrl": "https://maps.app.goo.gl/VzccMpX7nCxzrbFdA",
+    "featured": [
+      {
+        "text": "Walking the 303 m bridge with the East Sea right under my feet — that open feeling is special, and at dusk the light makes it feel like floating on the sea.",
+        "source": "Independent traveller · Seoul"
+      },
+      {
+        "text": "Free and open coastal park, a few steps from the Ulgi Lighthouse — the most underrated corner of suburban Ulsan.",
+        "source": "Photographer · Ulsan"
+      },
+      {
+        "text": "Walked the pine trail slowly with my kid, who kept looking at the rocks in the sea and listening to King Munmu's story; easy for my parents too.",
+        "source": "Family · Daegu"
+      }
+    ],
+    "items": [
+      {
+        "name": "Minjun",
+        "date": "May 2026",
+        "rating": 5,
+        "text": "Visited at dawn; the bridge backlit is super photogenic, and the bridge centre was silent — strongly recommend sunrise for the best light."
+      },
+      {
+        "name": "Seoyeon",
+        "date": "Apr 2026",
+        "rating": 5,
+        "text": "The 303 m bridge composition is stunning; about 20 min walk from Ilsan. Ulsan is windy by the sea — bring a jacket."
+      },
+      {
+        "name": "Jihun",
+        "date": "Mar 2026",
+        "rating": 4,
+        "text": "Great as free public space; weekends get crowded — weekdays or early morning are more comfortable."
+      },
+      {
+        "name": "Ha-eun",
+        "date": "Feb 2026",
+        "rating": 5,
+        "text": "About 20 min by bus from Ilsan to the park; the pine and coast along the way are pleasant for a half-day stroll."
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "How to get here",
+    "subtitle": "95 Deungdae-ro, Dong-gu, Ulsan, South Korea (Plus Code: FCRQ+XR) · Tel +82 52-209-3738",
+    "openMaps": "Open in Google Maps",
+    "mapsUrl": "https://maps.app.goo.gl/VzccMpX7nCxzrbFdA"
+  },
+  "footer": {
+    "siteName": "Daewangam Park (대왕암공원)",
+    "rights": "© 2026 Daewangam Park Guide — an independent non-profit attraction-info project. All rights reserved.",
+    "mission": {
+      "title": "Our mission",
+      "text": "So that every traveller who comes to Ulsan doesn't miss this pine forest and legend on the East-Sea cliff, we gathered scattered official information into one guide — just to give you the purest experience of 'listening to the waves, gazing at the rocks, reading the history'."
+    },
+    "legalLinksTitle": "Privacy & terms",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Settings",
+    "officialResourcesTitle": "Official & reference resources",
+    "mapsLabel": "Google Maps →",
+    "mapsUrl": "https://maps.app.goo.gl/VzccMpX7nCxzrbFdA",
+    "officialLinksList": [
+      { "name": "Daewangam Park Official Website (Dong-gu, Ulsan)", "url": "https://daewangam.donggu.ulsan.kr/" },
+      { "name": "Ulsan Metropolitan City Tourism · Daewangam Park", "url": "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.ulsan?mId=001002001000000000&unqId=27" },
+      { "name": "Dong-gu, Ulsan Tourism · Daewangam Suspension Bridge", "url": "https://www.donggu.ulsan.kr/tour/tourBBS/SA1/view.do?nttId=94" },
+      { "name": "Korea Tourism Organization (Chinese) · Daewangam Park", "url": "https://big5chinese.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111475" },
+      { "name": "Korea Tourism Organization (English) · Daewangam Bridge", "url": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=172686" }
+    ],
+    "disclaimer": "This website is an independent non-profit visitor-information project. We are not affiliated with any government agency or official organization.",
+    "dataSource": "Attraction information on this site is checked against public materials from Ulsan Metropolitan City, Dong-gu Ulsan, and the Korea Tourism Organization (VisitKorea), with no commercial recommendations.",
+    "dataSourceLabel": "Data source · Data Source"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: June 2026",
+    "sections": [
+      {
+        "heading": "1. Information collection",
+        "content": "We generally do not actively collect users' personal identity information. Any information you provide via contact forms or email is kept strictly confidential."
+      },
+      {
+        "heading": "2. Use of information",
+        "content": "Information we collect is used only to provide, maintain and improve our services and to communicate with you. We do not sell or share your personal information with third parties for marketing."
+      },
+      {
+        "heading": "3. Cookies & tracking",
+        "content": "We use cookies and similar tracking technologies to record activity on the site and store certain information. You can instruct your browser to refuse all cookies or alert you when one is sent."
+      },
+      {
+        "heading": "4. Data security",
+        "content": "Your data security matters to us. We take commercially acceptable measures to protect your personal data, though no internet transmission is 100% secure."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: June 2026",
+    "sections": [
+      {
+        "heading": "1. Acceptance of terms",
+        "content": "By accessing and using this website you agree to be bound by these terms. If you disagree with any part, do not use the service."
+      },
+      {
+        "heading": "2. Use of service",
+        "content": "This website is an independent non-profit visitor-information project. Information provided is for general informational purposes only. You agree to use the site responsibly and lawfully."
+      },
+      {
+        "heading": "3. Intellectual property",
+        "content": "All content on this site, including text, images and logos, unless otherwise noted, is the property of the site owner. Unauthorized use, copying or distribution is prohibited."
+      },
+      {
+        "heading": "4. Limitation of liability",
+        "content": "We are not liable for any direct, indirect, incidental or consequential damages arising from the use or inability to use this site or the information it contains."
+      }
+    ]
+  },
+  "cookieSettings": {
+    "title": "Cookie Settings",
+    "description": "Manage your cookie preferences.",
+    "essential": {
+      "title": "Strictly necessary cookies",
+      "description": "Required for basic site functions.",
+      "badge": "Always active"
+    },
+    "analytics": {
+      "title": "Analytics cookies",
+      "description": "Help us understand how visitors interact with the site."
+    },
+    "marketing": {
+      "title": "Marketing cookies",
+      "description": "Used to track visitors across sites."
+    },
+    "save": "Save preferences",
+    "saved": "Preferences saved!"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Practical info on Daewangam Park's facilities, history and visit planning.",
+    "amenities": {
+      "title": "Nearby facilities",
+      "items": [
+        { "icon": "🅿️", "label": "Parking", "value": "Attached lot (mostly paid)" },
+        { "icon": "🚻", "label": "Restrooms", "value": "Entrance rest area & public toilets" },
+        { "icon": "🔌", "label": "Fuel / charging", "value": "Chargers in public lot" },
+        { "icon": "♿", "label": "Accessibility", "value": "Gentle trail access" }
+      ]
+    },
+    "categories": [
+      {
+        "id": "infra",
+        "title": "Transport & infrastructure",
+        "items": [
+          {
+            "q": "Is there parking, and what does it cost?",
+            "a": "An attached lot (mostly paid) is on-site, walkable. Fills easily on weekends/holidays — arrive early or prefer transit."
+          },
+          {
+            "q": "Are wheelchairs or strollers allowed?",
+            "a": "Daewangam has a gentle pine trail; wheelchairs and strollers reach some viewpoints via the main path. But the bridge is windy and sways — stay on hard ground with company."
+          },
+          {
+            "q": "Are there restrooms or food on-site?",
+            "a": "The park is open green space; restrooms and snacks are at the entrance rest area and nearby. Refuel water/food at the rest area before entering."
+          },
+          {
+            "q": "Nearby fuel or EV charging?",
+            "a": "Public lots have EV chargers; traditional fuel stations are along Ulsan city and Dong-gu roads — self-drive visitors can refill en route."
+          }
+        ]
+      },
+      {
+        "id": "geo",
+        "title": "History & science",
+        "items": [
+          {
+            "q": "What's the link between 'Daewangam' and King Munmu?",
+            "a": "'Daewang (대왕)' refers to King Munmu of Unified Silla. Records say he commanded burial at sea to become a dragon guarding the nation; Daewangam is the vessel of this 'guardian dragon' legend — the name carries coastal-defence memory and Unified Silla's cultural image."
+          },
+          {
+            "q": "What's its special natural & cultural value?",
+            "a": "Daewangam isn't a theme park but a public coastal space grown from East-Sea sea-eroded landforms — weaving coastal-defence legend, dragon symbolism, a modern bridge and pine greenbelt. The bridge, Ulgi Lighthouse and sea rocks form a low-impact, high-empathy design, and one of Ulsan's 'pine and East Sea' city cards."
+          }
+        ]
+      },
+      {
+        "id": "plan",
+        "title": "Planning & tickets",
+        "items": [
+          {
+            "q": "Is a ticket required?",
+            "a": "Daewangam Park is free and open 24 hours; the sea bridge is also free to cross — no gate, no ticket or reservation, visit anytime (respect the environment, no late-night noise)."
+          },
+          {
+            "q": "How long does a visit take?",
+            "a": "A relaxed visit is about 1–2 hr (bridge + photo stops); with the Ulgi Lighthouse and Ilsan Beach, allow a half-day."
+          },
+          {
+            "q": "Can I visit in bad weather?",
+            "a": "Yes — the park is open in any weather. But in strong wind, heavy rain or thunderstorms the bridge may close; take care, wear non-slip shoes, watch the forecast; rocks are slippery when wet."
+          }
+        ]
+      },
+      {
+        "id": "nearby",
+        "title": "Nearby links",
+        "items": [
+          {
+            "q": "What else is worth visiting nearby?",
+            "a": "From Daewangam you can link the Ulgi Lighthouse (울기등대), Ilsan Beach (일산해수욕장), the old Bang-eojin Fisheries School area and the Dong-gu coastal trail into a 'pine–bridge–rock–lighthouse' half-day coastal route."
+          }
+        ]
+      }
+    ]
+  },
+  "recommendations": {
+    "title": "Explore more of Ulsan",
+    "attractionsTitle": "Nearby attractions",
+    "toursTitle": "Recommended experiences",
+    "attractions": [
+      { "name": "Ulgi Lighthouse (울기등대 · among Korea's earliest lighthouses)", "url": "https://www.donggu.ulsan.kr/tour/tourBBS/SA1/view.do?nttId=94" },
+      { "name": "Ilsan Beach (일산해수욕장 · East-Sea sand)", "url": "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.ulsan?mId=001002001000000000&unqId=27" },
+      { "name": "Old Bang-eojin Fisheries School (옛 방어진수산학교 · historic campus)", "url": "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.ulsan?mId=001002001000000000&unqId=27" },
+      { "name": "Ulsan Metropolitan City Tourism (official guide)", "url": "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.ulsan?mId=001002001000000000&unqId=27" },
+      { "name": "Korea Tourism Organization (VisitKorea · EN)", "url": "https://english.visitkorea.or.kr" }
+    ],
+    "tours": [
+      { "name": "Korea Tourism Organization (VisitKorea)", "url": "https://english.visitkorea.or.kr" },
+      { "name": "Ulsan Metropolitan City Tourism (Ulsan Tourism)", "url": "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.ulsan?mId=001002001000000000&unqId=27" },
+      { "name": "Dong-gu, Ulsan (동구청)", "url": "https://www.donggu.ulsan.kr/" }
+    ]
+  },
+  "scienceArt": {
+    "title": "Coastal defence & city: pine, bridge and dragon",
+    "subtitle": "Look past the surface 'pretty' to find what's rare here: a public coastal greenbelt, a coastal-defence legend, and an open-air city sea-watching classroom all at once.",
+    "scienceMuseum": {
+      "name": "King Munmu & the guardian dragon",
+      "role": "Coastal-defence memory in the rocks",
+      "highlight": "Daewangam's hardest core is both visible and invisible. Visible: bridge and East-Sea rocks; invisible: the 'Munmu-becomes-dragon' history and Korea's coastal-defence memory. Visitors see landscape; history buffs see a legend still being told.",
+      "points": [
+        "Core: coastal-defence memory, dragon legend and city geography light up this coast.",
+        "Key: public coastal facility turned into a low-impact, high-empathy sea classroom.",
+        "Meaning: it upgrades 'East-Sea greenbelt' into a public coastal-defence model."
+      ],
+      "ctaLabel": "Visit Dong-gu, Ulsan ↗",
+      "ctaUrl": "https://www.donggu.ulsan.kr/"
+    },
+    "artMuseum": {
+      "name": "Transparency symbol in the bridge",
+      "role": "Daewangam's cultural symbol",
+      "highlight": "The bridge, pines and Ulgi Lighthouse, with the East Sea, form Daewangam's identity system: instantly saying 'Ulsan, East Sea, and a gentle transparent coastal aesthetic'. From open-sea views to sunrise gold, this contrast makes it one of Ulsan's most memorable city images.",
+      "points": [
+        "Imagery: bridge, pine, lighthouse — highly recognizable.",
+        "Status: Ulsan's most photogenic coastal park.",
+        "Narrative: it translates coastal-defence themes into publicly felt aesthetic experience."
+      ],
+      "ctaLabel": "Visit Ulsan tourism ↗",
+      "ctaUrl": "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.ulsan?mId=001002001000000000&unqId=27"
+    }
+  },
+  "outdoorMuseum": {
+    "title": "Photo & check-in guide: Daewangam's best spots",
+    "subtitle": "As Ulsan's most recognizable coastal park, a few structured spots and times greatly boost your photos' usefulness and beauty.",
+    "items": [
+      {
+        "id": "sunrise",
+        "icon": "🌅",
+        "name": "Bridge · open-sea view",
+        "location": "Bridge middle",
+        "background": "Morning to dusk, the deck sways with the sea breeze — Daewangam's classic 'bridge–sea' composition; backlit cables are striking.",
+        "points": [
+          "Use the cables as a leading line toward the East Sea.",
+          "Crouch low to layer deck and sea for a steadier frame."
+        ],
+        "badge": { "value": "Morning", "label": "Best shots" }
+      },
+      {
+        "id": "bridge",
+        "icon": "🌉",
+        "name": "Sea-side railing · rock view",
+        "location": "Bridge sea side",
+        "background": "Shooting down from the sea side folds 'bridge + East Sea + Daewangam' into one frame — Daewangam's most recognizable spot.",
+        "points": [
+          "Side light on cables at morning is softest.",
+          "Mind your feet and crowds; don't enter closed areas for a shot."
+        ],
+        "badge": { "value": "All day", "label": "Most accessible" }
+      },
+      {
+        "id": "sea",
+        "icon": "🌉",
+        "name": "Daewangam & sunrise",
+        "location": "Islet viewing area",
+        "background": "The first sunrise light on the rocks is the most atmospheric window; the guardian dragon feels most mysterious in the morning glow.",
+        "points": [
+          "Shoot blue hour for best sky/sea balance.",
+          "Frame rocks as silhouette leaving warm sea horizon."
+        ],
+        "badge": { "value": "Sunrise", "label": "Strongest mood" }
+      },
+      {
+        "id": "night",
+        "icon": "🌃",
+        "name": "Night lights",
+        "location": "Bridge toward lighthouse",
+        "background": "After dark, railings and deck light up; Daewangam reflects a river of lights — great for closing long-exposure night shots and coastal portraits.",
+        "points": [
+          "Use lights as a leading line toward the distance.",
+          "Raise ISO or use a stabilizer for night frames."
+        ],
+        "badge": { "value": "Night", "label": "Best layers" }
+      }
+    ]
+  },
+  "education": {
+    "title": "Why is this Ulsan's coastal-defence landmark?",
+    "subtitle": "What's most worth learning about Daewangam isn't 'it got prettier' but how it folded East-Sea sea-eroded landforms back into public coastal-defence memory while keeping reverence for nature.",
+    "points": [
+      {
+        "title": "A coastal living-room still used by citizens",
+        "text": "Daewangam isn't a 'hide the coast and done' case, but a sample that keeps activating the coastal-defence landmark as shared space through public design.",
+        "items": [
+          "Citizens hand daily walks and travellers' pilgrimages to this pine and bridge.",
+          "Public space and urban coast coexist long-term."
+        ]
+      },
+      {
+        "title": "Writing coastal-defence ethics into visitor behaviour",
+        "text": "Plaques, the bridge and guides aren't just navigation but let visitors quietly join respect for public environment and others while using the space.",
+        "items": [
+          "Visitors are guided onto low-impact paths.",
+          "Viewing and public life don't sacrifice each other."
+        ]
+      },
+      {
+        "title": "Turning coastal memory into public aesthetics",
+        "text": "Daewangam didn't erase the legend's background; through the bridge, lighthouse and signage it lets the public sense what this land went through while visiting.",
+        "items": [
+          "Story depth and viewing happen at one place.",
+          "Exactly the value a non-profit science site should amplify."
+        ]
+      }
+    ]
+  },
+  "audience": {
+    "title": "Who should come? From segmented guide to custom itinerary",
+    "subtitle": "Not just 'you'll like it' — tells you how to go, where to start, and which Ulsan nodes to link.",
+    "resonanceLabel": "Resonance: ",
+    "routeLabel": "Recommended module: ",
+    "tipLabel": "Tip: ",
+    "items": [
+      {
+        "icon": "👨‍👩‍👧",
+        "group": "Families",
+        "resonance": "Free, open, safe gentle pine trail; kids gaze at the East-Sea rocks and hear King Munmu's story, and easily reach the bridge on the gentle side.",
+        "tip": "Spend energy on photo stops, not on crowding."
+      },
+      {
+        "icon": "📷",
+        "group": "Photographers & couples",
+        "resonance": "Morning/dusk bridge reflections are Ulsan's most romantic frames, high hit rate.",
+        "tip": "Count arrival, return and light into the plan so composition isn't beaten by the scene's pace."
+      },
+      {
+        "icon": "🌿",
+        "group": "Coastal-defence & history buffs",
+        "resonance": "As a coastal-defence sample, the Munmu background, bridge engineering and Ulgi Lighthouse deserve close looks.",
+        "tip": "Avoid the most crowded weekends; choose morning or weekday afternoon to really observe details."
+      },
+      {
+        "icon": "🗺️",
+        "group": "First-time visitors to Korea",
+        "resonance": "Without going far, observe Korean coastal-defence culture, dragon legend and East-Sea landforms in suburban Ulsan; link bus, local food — an ideal start for the 'pine and East Sea' theme.",
+        "tip": "If only one Ulsan suburb landmark fits, Daewangam is the best first stop for 'coastal defence and city'."
+      }
+    ]
+  },
+  "lodging": {
+    "title": "Lodging guide: stay close, or stay convenient",
+    "subtitle": "Ulsan is a port city 'where industry and ocean meet'. We don't recommend specific hotels but help you read two lodging patterns to choose.",
+    "scenarioTitle": "Two choices, how to pick",
+    "options": [
+      {
+        "icon": "🌉",
+        "name": "Dong-gu / Ilsan area",
+        "role": "Closest to park & coast",
+        "highlight": "Staying in Dong-gu or Ilsan (일산), a short bus/car ride reaches Daewangam, the Ulgi Lighthouse and Ilsan Beach; morning sea breeze and sunrise suit travellers. Best for 'pine stroll + sea watch' with high convenience.",
+        "commute": "Commute: to park walk ~15–20 min or bus ~10–20 min. Walking is easy on legs — good for dawn bridge strolls.",
+        "points": [
+          "To bridge bus/walk ~10–20 min, least walking.",
+          "Coast, snacks and sunrise are rich.",
+          "Many choices, usually better value."
+        ]
+      },
+      {
+        "icon": "🏙️",
+        "name": "Ulsan city / Taehwagang",
+        "role": "Best for food & hub",
+        "highlight": "Staying in central Ulsan or Taehwagang (태화강), near KTX hub, shopping and food streets — best for 'sea + transfer' travellers, then bus or drive to Daewangam by day.",
+        "commute": "Commute: bus to Ilsan about 30–50 min. Good for self-drive or independent travellers wanting absolute convenience.",
+        "points": [
+          "KTX hub and shopping at hand, good for transfer.",
+          "Food, cafés and night markets are rich.",
+          "To Daewangam bus/short drive ~30–50 min."
+        ]
+      }
+    ],
+    "peakTitle": "Peak-season warning",
+    "peak": "Ulsan's spring/autumn viewing seasons and fine weekend weather tighten rooms and raise prices. Book weeks ahead; if booking near a holiday, expand to Gyeongju, Busan and nearby areas, then rail or drive.",
+    "tipsTitle": "Lodging tips",
+    "tips": [
+      "For sunrise and bridge: prefer Dong-gu / Ilsan, walk to the park at dawn.",
+      "For coast & convenience: central Ulsan / Taehwagang, walk and dine at hand.",
+      "Before booking confirm breakfast, parking and chargers (key for self-drive).",
+      "Book ahead in peak/holidays to avoid no-room or high price."
+    ]
+  }
+}

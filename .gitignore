@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build output
+dist/
+.output/
+.astro/
+astro.config.mjs.timestamp-*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment
+.env
+.env.*
+*.local
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Legacy / temp scripts (history update & rename scripts, txt notes)
+*.update.js
+*rename_*.js
+*.update.txt
+*.bak
+*.tmp
