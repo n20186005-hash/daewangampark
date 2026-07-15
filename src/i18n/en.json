@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Daewangam Park (대왕암공원) | Dong-gu, Ulsan, South Korea · Coastal cliff park, 303 m sea bridge & King Munmu's guardian-dragon legend",
-    "description": "The complete guide to Daewangam Park (Korean: 대왕암공원): a coastal cliff park on the East Sea in Dong-gu, Ulsan. A 303 m sea suspension bridge (출렁다리) links the pine-forest shore to the jagged Daewangam islet, framed by a pine forest trail, the Ulgi Lighthouse and East-Sea sunrises. It carries the legend of King Munmu of Silla, who became a 'guardian dragon' to protect the country. The park is open 24 hours and free; the bridge is free to cross. Hours, transport, history, photo spots and visitor reviews all in one place."
+    "title": "Daewangam Park (대왕암공원) | Dong-gu, Ulsan, South Korea · Coastal cliff park, 303 m sea bridge & the twin guardian-dragon legend",
+    "description": "The complete guide to Daewangam Park (Korean: 대왕암공원): a coastal cliff park on the East Sea in Dong-gu, Ulsan. A 303 m sea suspension bridge (출렁다리) links the pine-forest shore to the jagged Daewangam islet, framed by a pine forest trail, the Ulgi Lighthouse and East-Sea sunrises. In the more careful reading of the legend, King Munmu became a guardian sea dragon off Gyeongju, while his queen consort became the female guardian dragon associated with Ulsan's Daewangam rocks. The park is open 24 hours and free; the bridge is free to cross. Hours, transport, history, photo spots and visitor reviews all in one place."
   },
   "header": {
     "siteName": "Daewangam Park",
@@ -45,15 +45,15 @@
   },
   "hero": {
     "title": "Daewangam Park (대왕암공원)",
-    "subtitle": "A coastal cliff park on the East Sea in Dong-gu, Ulsan. A 303 m sea suspension bridge (출렁다리) soars across the water, linking the pine-forest shore to the jagged Daewangam islet. Legend says King Munmu of Silla became a 'guardian dragon' to protect the country, and the dragon's eye hides among these waves. Pine, lighthouse and sunrise meet here; the park is free and open 24 hours.",
+    "subtitle": "A coastal cliff park on the East Sea in Dong-gu, Ulsan. A 303 m sea suspension bridge (출렁다리) soars across the water, linking the pine-forest shore to the jagged Daewangam islet. In the fuller legend, King Munmu of Silla became a guardian sea dragon off Gyeongju, while his queen consort became the female guardian dragon associated with these Ulsan rocks, together watching over the East Sea. Pine, lighthouse and sunrise meet here; the park is free and open 24 hours.",
     "rating": "4.6 (5,406)",
     "reviewCount": "5,406 reviews",
     "hours": "24 hours (park)",
     "openMaps": "View location on Google Maps",
     "mapsUrl": "https://maps.app.goo.gl/VzccMpX7nCxzrbFdA",
     "legend": {
-      "quote": "King Munmu of Silla commanded to be buried at sea, that he might become a guardian dragon and protect the nation forever — and these very rocks are said to be that dragon's form.",
-      "attribution": "— Legend of King Munmu's Guardian Dragon"
+      "quote": "King Munmu of Silla is said to have become a guardian sea dragon off Gyeongju after death; his queen consort, too, vowed to become a female guardian dragon and to rest beneath the rocks of Ulsan's Daewangam, together guarding the East Sea.",
+      "attribution": "— The Silla court's twin guardian-dragon legend"
     },
     "tags": ["Coastal cliff park", "Free admission", "303 m sea bridge"],
     "routeCta": {
@@ -87,7 +87,7 @@
     "subtitle": "A few numbers to understand this pine forest park on the East-Sea cliff.",
     "items": [
       { "icon": "🌉", "label": "Bridge / Bridge", "value": "303 m long", "note": "A 303 m sea suspension bridge (출렁다리) links the shore to the Daewangam islet — Ulsan's first suspension bridge and its most recognizable landmark, free to cross and gaze over the sea." },
-      { "icon": "🐉", "label": "Legend / Legend", "value": "Munmu's dragon", "note": "King Munmu of Silla is said to have commanded burial at sea to become a dragon guarding the nation; Daewangam is the vessel of this 'guardian dragon' legend and Korea's coastal-defence memory." },
+      { "icon": "🐉", "label": "Legend / Legend", "value": "Queen consort's dragon", "note": "A more careful telling separates the two sites: King Munmu became a guardian sea dragon off Gyeongju, while Ulsan's Daewangam is more closely tied to the queen consort's female guardian-dragon legend; together they form a twin guardian-dragon memory of coastal defence." },
       { "icon": "🌲", "label": "Landscape / Landscape", "value": "Pine cliff coast", "note": "A pine forest trail runs along coastal cliffs on three sides of the East Sea, with sea-eroded rocks like the Hat Rock and the Phallus Rock, and a view to the Ulgi Lighthouse." },
       { "icon": "🗼", "label": "Lighthouse / Lighthouse", "value": "Ulgi Lighthouse", "note": "The Ulgi Lighthouse (울기등대) inside the park is among the earliest modern lighthouses in Korea, and a classic spot for East-Sea and sunrise views." },
       { "icon": "📍", "label": "Coordinates / Coords", "value": "35°32′N, 129°21′E", "note": "Plus Code: FCRQ+XR, Ulsan. Address: 95 Deungdae-ro, Dong-gu, Ulsan, South Korea." },
@@ -149,8 +149,8 @@
     "subtitle": "Not just 'who it suits' — a walkable half-day line. Centred on the pine coast and the bridge, it links the lighthouse, rocks and sunrise seascape.",
     "steps": [
       { "title": "[Start] Pine forest trail & entrance", "meta": "Warm-up · ~30 min", "text": "From the entrance, stroll the pine forest trail; sea wind through the trees, waves in your ears — align your pace with the East Sea, then head toward the bridge.", "tips": ["Morning/dusk light is best, fewer crowds."] },
-      { "title": "[Star] 303 m sea suspension bridge", "meta": "Core experience · ~40 min", "text": "Walk the 303 m bridge; the deck sways with the sea breeze, the East Sea below, the Daewangam islet at the end. This is Daewangam's most photogenic partner and the home of the 'guardian dragon' legend.", "tips": ["Bridge is free to cross; allow time for photos and pauses."] },
-      { "title": "[Extend] Daewangam rock & sea rocks", "meta": "Local story · ~40 min", "text": "Walk around to Daewangam rock and sea-eroded forms like the Hat Rock and Phallus Rock; read the legend of King Munmu's 'guardian dragon' from the plaques, collecting nature and memory together.", "tips": ["Rocks are slippery; stay on hard ground with company."] },
+      { "title": "[Star] 303 m sea suspension bridge", "meta": "Core experience · ~40 min", "text": "Walk the 303 m bridge; the deck sways with the sea breeze, the East Sea below, the Daewangam islet at the end. This is Daewangam's most photogenic partner and the best overlook for understanding how the twin guardian-dragon legend meets the East-Sea landforms.", "tips": ["Bridge is free to cross; allow time for photos and pauses."] },
+      { "title": "[Extend] Daewangam rock & sea rocks", "meta": "Local story · ~40 min", "text": "Walk around to Daewangam rock and sea-eroded forms like the Hat Rock and Phallus Rock; use the plaques to read the fuller legend of King Munmu and his queen consort, collecting nature and memory together.", "tips": ["Rocks are slippery; stay on hard ground with company."] },
       { "title": "[Refuel] Rest area & light meal", "meta": "Culture break · ~40 min", "text": "Refuel at rest areas and snack spots near the park, then look back at the lighthouse and horizon, gathering pine, bridge and legend into one walk.", "tips": ["On-site amenities are modest — bring your own water."] },
       { "title": "[End] Ulgi Lighthouse or Ilsan Beach", "meta": "Wrap · ~60 min+", "text": "If energy allows, visit the Ulgi Lighthouse for an East-Sea overlook, or extend to nearby Ilsan Beach; otherwise walk back, wrapping the route into a complete 'pine + bridge + rock + lighthouse' half-day pack.", "tips": ["Lighthouse and sunrise are best after dawn — save the seascape for the finish."] }
     ],
@@ -158,7 +158,7 @@
   },
   "intro": {
     "title": "Getting to know Daewangam Park",
-    "description": "Daewangam Park (Korean: 대왕암공원) sits on the East Sea in Dong-gu, Ulsan — a pine forest park built along coastal cliffs. A 303 m sea suspension bridge (출렁다리) links the jagged Daewangam islet to the shore; the bridge is free to cross and gaze over the sea. Facing the East Sea on three sides, with pines and waves and the Ulgi Lighthouse standing among them, it carries the legend of King Munmu of Silla, who became a 'guardian dragon' to protect the country after death. 'Daewang (대왕)' in the name refers to this Unified Silla monarch, King Munmu.",
+    "description": "Daewangam Park (Korean: 대왕암공원) sits on the East Sea in Dong-gu, Ulsan — a pine forest park built along coastal cliffs. A 303 m sea suspension bridge (출렁다리) links the jagged Daewangam islet to the shore; the bridge is free to cross and gaze over the sea. Facing the East Sea on three sides, with pines and waves and the Ulgi Lighthouse standing among them, it carries a court legend more precisely read as a twin guardian-dragon story: King Munmu became a guardian sea dragon off Gyeongju, while the queen consort came to be associated with Ulsan's Daewangam rocks.",
     "visitGuide": {
       "title": "Visitor guide",
       "eyebrow": "Practical planning",
@@ -174,7 +174,7 @@
       "title": "Highlights",
       "items": [
         "303 m sea suspension bridge, free to cross, soaring over the sea — Ulsan's most recognizable coastal landmark",
-        "Vessel of King Munmu's 'guardian dragon' legend, where coastal-defence memory meets natural landforms",
+        "A site read through the Silla court's twin guardian-dragon legend, where coastal-defence memory meets natural landforms",
         "Pine forest cliff trail on three sides of the East Sea, with views to the Ulgi Lighthouse and sunrise",
         "Sea-eroded rocks like the Hat Rock and Phallus Rock, an open-air geology lesson with plaques",
         "Park open 24 hours free, bridge free, managed by Dong-gu, Ulsan — visit anytime"
@@ -339,21 +339,21 @@
     "text": "Daewangam Park is on the East Sea in Dong-gu, Ulsan — a citizen coastal park grown from seaside woodland and sea-eroded landforms, maintained by Dong-gu, Ulsan as public space. It has long been a seaside living-room shared by citizens strolling, travellers pilgrimaging and families, and is one of Ulsan's 'pine, bridge and legend' city cards."
   },
   "humanities": {
-    "title": "Humanities & coastal defence: from King Munmu to the guardian dragon",
-    "subtitle": "Put Unified Silla history, the sea-dragon legend, the modern bridge engineering and the sea-eroded landforms on one timeline to truly understand why this park is more than 'pretty cliffs'."
+    "title": "Humanities & coastal defence: from King Munmu to the queen consort's dragon",
+    "subtitle": "Place Unified Silla history, the twin guardian-dragon legend of King Munmu and his queen consort, the modern bridge engineering and the sea-eroded landforms on one timeline to understand why this park is more than 'pretty cliffs'."
   },
   "knowledge": {
     "title": "History & origin of Daewangam Park",
     "sections": [
       {
         "id": "history",
-        "title": "King Munmu of Silla & the sea dragon",
-        "content": "Daewangam's name comes from King Munmu (문무왕), the 30th ruler of Silla. Records say he commanded burial at sea to become a dragon guarding the nation against invaders; these East-Sea rocks are seen as the embodiment of the 'guardian dragon', carrying Korea's coastal-defence memory and the achievements of Unified Silla."
+        "title": "King Munmu and the queen consort's twin guardian dragons",
+        "content": "The core legend at Daewangam is better understood as more than a simple 'Munmu became a dragon' story. Historically, King Munmu (문무왕) is tied to the sea tomb off Gyeongju, where he became a guardian sea dragon; Ulsan's Daewangam is more closely linked to the queen consort's local legend as a female guardian dragon resting beneath these rocks. Taken together, they form a fuller memory of twin guardian dragons defending the East Sea."
       },
       {
         "id": "name",
         "title": "The name 'Daewangam'",
-        "content": "'Daewang (대왕)' directly refers to King Munmu of Unified Silla. The Daewangam islet and the surrounding legend plaques tie the place name closely to the king's dragon legend, turning a natural landscape into a readable historical text."
+        "content": "'Daewang (대왕)' is tied to the coastal-defence memory of the Unified Silla court. For visitors, the key distinction is this: Gyeongju's Daewangam is associated with King Munmu's sea tomb, while Ulsan's Daewangam more often carries the queen consort's local dragon legend, binding place name, rocks and memory together."
       },
       {
         "id": "bridge",
@@ -377,13 +377,13 @@
       },
       {
         "id": "legend",
-        "title": "The guardian dragon today",
-        "content": "King Munmu's 'guardian dragon' legend has not faded with history but is retold through Daewangam, the plaques and citizens' walks. It lets the public sense what this land went through while visiting — exactly the value a non-profit science site should amplify."
+        "title": "The twin guardian dragons today",
+        "content": "The twin guardian-dragon legend of King Munmu and the queen consort has not faded with history but is retold through Daewangam, the plaques and citizens' walks. It lets the public sense what this land went through while visiting, and how local storytelling preserved coastal-defence memory into the present — exactly the value a non-profit science site should amplify."
       }
     ],
     "didYouKnow": {
       "title": "Did you know?",
-      "text": "Daewangam is more than a coastal park — it is an open-air classroom of Korea's coastal-defence memory and folk legend: from King Munmu's 'guardian dragon', to the 303 m sea bridge, to the Ulgi Lighthouse and sea rocks, land and legend written into one East-Sea cliff."
+      "text": "Daewangam is more than a coastal park — it is an open-air classroom of Korea's coastal-defence memory and folk legend: from the twin guardian-dragon story of King Munmu and the queen consort, to the 303 m sea bridge, to the Ulgi Lighthouse and sea rocks, land and legend written into one East-Sea cliff."
     }
   },
   "sitePlaques": {
@@ -399,7 +399,7 @@
         "koTitle": "대왕암공원 연혁",
         "koTitleZh": "Daewangam Park history",
         "location": "Park main entrance",
-        "body": "Such plates usually give the key background: Daewangam as an East-Sea coastal park and its link to King Munmu's 'guardian dragon' legend. Reading it is lesson one in using this coastal landmark."
+        "body": "Such plates usually give the key background: Daewangam as an East-Sea coastal park and its link to the Silla court's twin guardian-dragon legend. Reading them is lesson one in understanding this coastal landmark."
       },
       {
         "id": "signboard",
@@ -421,12 +421,12 @@
       },
       {
         "id": "dongporu",
-        "badge": "Guardian-dragon marker",
-        "title": "King Munmu & the sea dragon",
+        "badge": "Twin guardian-dragon marker",
+        "title": "The queen consort & the female guardian dragon",
         "koTitle": "호국룡 안내",
         "koTitleZh": "Guardian dragon legend",
         "location": "Toward Daewangam islet",
-        "body": "Set by Dong-gu, Ulsan, marking Daewangam's link to King Munmu's 'guardian dragon' legend. It reminds every visitor: this rock connects Korea's most moving coastal-defence legend with its most transparent sea experience."
+        "body": "Set by Dong-gu, Ulsan, marking Daewangam's local link to the queen consort as the female guardian dragon, while echoing the wider Munmu-at-sea motif. It reminds every visitor: this rock connects one of Korea's most moving coastal-defence legends with one of its clearest sea views."
       }
     ]
   },
@@ -446,7 +446,7 @@
       "Blue-and-white info signs echoing the coastal-defence theme.",
       "Bridge cables as leading line, rocks and skyline in one frame.",
       "Sea-side of the bridge, one of the most photogenic spots.",
-      "Daewangam islet in the distance, home of the guardian dragon.",
+      "Daewangam islet in the distance, tied in local legend to the queen consort as the female guardian dragon.",
       "Warm dusk deck, west light drawing gold on the cables.",
       "Bridge and East Sea together, best window dawn to dusk.",
       "Ulgi Lighthouse as a streetscape subject, coastal-defence flavour.",
@@ -480,7 +480,7 @@
         "source": "Photographer · Ulsan"
       },
       {
-        "text": "Walked the pine trail slowly with my kid, who kept looking at the rocks in the sea and listening to King Munmu's story; easy for my parents too.",
+        "text": "Walked the pine trail slowly with my kid, who kept looking at the rocks in the sea and listening to the story of King Munmu and the queen consort; easy for my parents too.",
         "source": "Family · Daegu"
       }
     ],
@@ -646,7 +646,7 @@
         "items": [
           {
             "q": "What's the link between 'Daewangam' and King Munmu?",
-            "a": "'Daewang (대왕)' refers to King Munmu of Unified Silla. Records say he commanded burial at sea to become a dragon guarding the nation; Daewangam is the vessel of this 'guardian dragon' legend — the name carries coastal-defence memory and Unified Silla's cultural image."
+            "a": "'Daewang (대왕)' is indeed tied to King Munmu of Unified Silla, but Ulsan's Daewangam is better not reduced to 'the place where Munmu became a dragon'. A more careful explanation is that King Munmu became a guardian sea dragon off Gyeongju, while Ulsan's Daewangam more often carries the queen consort's local legend as the female guardian dragon; together they form the cultural image of twin guardian dragons."
           },
           {
             "q": "What's its special natural & cultural value?",
@@ -705,9 +705,9 @@
     "title": "Coastal defence & city: pine, bridge and dragon",
     "subtitle": "Look past the surface 'pretty' to find what's rare here: a public coastal greenbelt, a coastal-defence legend, and an open-air city sea-watching classroom all at once.",
     "scienceMuseum": {
-      "name": "King Munmu & the guardian dragon",
+      "name": "King Munmu and the queen consort's twin guardian dragons",
       "role": "Coastal-defence memory in the rocks",
-      "highlight": "Daewangam's hardest core is both visible and invisible. Visible: bridge and East-Sea rocks; invisible: the 'Munmu-becomes-dragon' history and Korea's coastal-defence memory. Visitors see landscape; history buffs see a legend still being told.",
+      "highlight": "Daewangam's hardest core is both visible and invisible. Visible: bridge and East-Sea rocks; invisible: the twin guardian-dragon narrative and Korea's coastal-defence memory. Visitors see landscape; history buffs see how King Munmu and the queen consort were placed into two linked coastal traditions, one off Gyeongju and one at Ulsan.",
       "points": [
         "Core: coastal-defence memory, dragon legend and city geography light up this coast.",
         "Key: public coastal facility turned into a low-impact, high-empathy sea classroom.",
@@ -762,7 +762,7 @@
         "icon": "🌉",
         "name": "Daewangam & sunrise",
         "location": "Islet viewing area",
-        "background": "The first sunrise light on the rocks is the most atmospheric window; the guardian dragon feels most mysterious in the morning glow.",
+        "background": "The first sunrise light on the rocks is the most atmospheric window; read through the queen consort's local dragon legend, the rocks feel especially evocative in the morning glow.",
         "points": [
           "Shoot blue hour for best sky/sea balance.",
           "Frame rocks as silhouette leaving warm sea horizon."
@@ -823,7 +823,7 @@
       {
         "icon": "👨‍👩‍👧",
         "group": "Families",
-        "resonance": "Free, open, safe gentle pine trail; kids gaze at the East-Sea rocks and hear King Munmu's story, and easily reach the bridge on the gentle side.",
+        "resonance": "Free, open, safe gentle pine trail; kids gaze at the East-Sea rocks and hear the story of King Munmu and the queen consort, then easily reach the bridge on the gentle side.",
         "tip": "Spend energy on photo stops, not on crowding."
       },
       {
@@ -835,7 +835,7 @@
       {
         "icon": "🌿",
         "group": "Coastal-defence & history buffs",
-        "resonance": "As a coastal-defence sample, the Munmu background, bridge engineering and Ulgi Lighthouse deserve close looks.",
+        "resonance": "As a coastal-defence case study, the twin-legend background of King Munmu and the queen consort, the bridge engineering and the Ulgi Lighthouse deserve close looks.",
         "tip": "Avoid the most crowded weekends; choose morning or weekday afternoon to really observe details."
       },
       {
