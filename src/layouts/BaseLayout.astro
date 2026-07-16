@@ -18,11 +18,12 @@ const htmlLang = htmlLangAttr(lang);
 const alts = buildAlternates(path);
 const canonical = alts[lang] ?? alts.zh;
 const { messages } = getI18n(Astro.url);
+const attractionName = messages.header?.siteName ?? messages.footer?.siteName ?? messages.meta.title;
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'TouristAttraction',
-  name: messages.meta.title,
+  name: attractionName,
   description: messages.meta.description,
   url: canonical,
   image: 'https://daewangampark.com/gallery/daewangampark-1.jpg',
