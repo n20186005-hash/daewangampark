@@ -6,6 +6,8 @@ import Hero from '../../components/Hero.astro';
 import QuickFactsDashboard from '../../components/QuickFactsDashboard.astro';
 import ComplianceGuide from '../../components/ComplianceGuide.astro';
 import HigashiyamaRoute from '../../components/HigashiyamaRoute.astro';
+import WeatherForecast from '../../components/WeatherForecast.astro';
+import TideSection from '../../components/TideSection.astro';
 import Intro from '../../components/Intro.astro';
 import Transport from '../../components/Transport.astro';
 import Lodging from '../../components/Lodging.astro';
@@ -18,13 +20,16 @@ import Reviews from '../../components/Reviews.astro';
 import MapEmbed from '../../components/MapEmbed.astro';
 import DeepDive from '../../components/DeepDive.astro';
 import FAQ from '../../components/FAQ.astro';
+import NearbyLandmarks from '../../components/NearbyLandmarks.astro';
+import SourcesSection from '../../components/SourcesSection.astro';
 import { getI18n, languagesList } from '../../i18n/ui';
+import { place } from '../../config';
 
 export function getStaticPaths() {
   return languagesList.map((lang) => ({ params: { lang } }));
 }
 
-const { messages } = getI18n(Astro.url);
+const { lang, messages } = getI18n(Astro.url);
 const faq = messages.faq;
 const faqLd = (() => {
   const categories = faq?.categories ?? [];
@@ -38,22 +43,80 @@ const faqLd = (() => {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    '@id': `${place.baseUrl}/#faq`,
+    isPartOf: { '@id': `${place.baseUrl}/#webpage` },
     mainEntity,
   };
 })();
+
+const websiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${place.baseUrl}/#website`,
+  url: place.baseUrl,
+  name: `${place.fullName} (${place.fullNameLocal}) Visitor Guide`,
+  alternateName: place.shortName,
+  inLanguage: ['zh', 'en', 'ja', 'ko'],
+  publisher: { '@id': `${place.baseUrl}/#attraction` },
+};
+
+const webPageLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${place.baseUrl}/#webpage`,
+  url: Astro.url.href,
+  name: messages.meta.title,
+  description: messages.meta.description,
+  isPartOf: { '@id': `${place.baseUrl}/#website` },
+  about: { '@id': `${place.baseUrl}/#attraction` },
+  mainEntity: { '@id': `${place.baseUrl}/#attraction` },
+  primaryImageOfPage: { '@type': 'ImageObject', url: place.heroImage },
+};
 ---
 
 <BaseLayout title={messages.meta.title} description={messages.meta.description} path="">
+  <script slot="head" type="application/ld+json" is:inline set:html={JSON.stringify(websiteLd)}></script>
+  <script slot="head" type="application/ld+json" is:inline set:html={JSON.stringify(webPageLd)}></script>
   <script slot="head" type="application/ld+json" is:inline set:html={JSON.stringify(faqLd)}></script>
   <Breadcrumbs />
   <SectionNav />
-  <Hero />
+  <Hero lang={lang} />
   <QuickFactsDashboard />
   <Intro />
   <HumanitiesDossier />
   <DeepDive />
   <Transport />
   <HigashiyamaRoute />
+  <WeatherForecast lang={lang} server:defer>
+    <Fragment slot="fallback">
+      <section id="weather" class="section-padding" style="background: var(--bg-secondary);">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-10 text-center" style="color: var(--text-primary);">
+            {messages.weather.title}
+          </h2>
+          <div class="grid lg:grid-cols-2 gap-6">
+            <div class="rounded-3xl border animate-pulse" style="height: 20rem; background: var(--card-bg); border-color: var(--border-color);"></div>
+            <div class="rounded-3xl border animate-pulse" style="height: 20rem; background: var(--card-bg); border-color: var(--border-color);"></div>
+          </div>
+        </div>
+      </section>
+    </Fragment>
+  </WeatherForecast>
+  <TideSection lang={lang} server:defer>
+    <Fragment slot="fallback">
+      <section id="tide" class="section-padding" style="background: var(--bg-secondary);">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-10 text-center" style="color: var(--text-primary);">
+            {messages.tide.title}
+          </h2>
+          <div class="grid lg:grid-cols-2 gap-6">
+            <div class="rounded-3xl border animate-pulse" style="height: 16rem; background: var(--card-bg); border-color: var(--border-color);"></div>
+            <div class="rounded-3xl border animate-pulse" style="height: 16rem; background: var(--card-bg); border-color: var(--border-color);"></div>
+          </div>
+        </div>
+      </section>
+    </Fragment>
+  </TideSection>
   <HiddenRules />
   <ComplianceGuide />
   <Lodging />
@@ -63,4 +126,6 @@ const faqLd = (() => {
   <Gallery />
   <FeaturedQuotes />
   <Reviews />
+  <NearbyLandmarks />
+  <SourcesSection />
 </BaseLayout>

@@ -1,0 +1,65 @@
+---
+import { getI18n } from '../i18n/ui';
+import { nearbyLandmarks, place } from '../config';
+
+const { messages } = getI18n(Astro.url);
+const n = messages.nearbyLandmarks ?? {};
+const localized = n.items ?? [];
+
+const items = nearbyLandmarks.map((landmark, i) => ({
+  ...landmark,
+  name: localized[i]?.name ?? landmark.name,
+  desc: localized[i]?.desc ?? '',
+}));
+
+// {{NEARBY_LANDMARK_1}} / {{NEARBY_LANDMARK_2}} semantic cluster sentence.
+const cluster = (n.cluster ?? '')
+  .replaceAll('{attraction}', place.fullName)
+  .replaceAll('{city}', place.city)
+  .replaceAll('{landmark1}', items[0]?.name ?? '')
+  .replaceAll('{landmark2}', items[1]?.name ?? '');
+---
+
+<section id="nearby" class="section-padding" style="background: var(--bg-tertiary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">
+      {n.title}
+    </h2>
+    {n.subtitle && (
+      <p class="text-center text-base sm:text-lg mb-6 max-w-3xl mx-auto" style="color: var(--text-secondary);">{n.subtitle}</p>
+    )}
+
+    {cluster && (
+      <p class="max-w-3xl mx-auto text-center text-base leading-relaxed mb-10" style="color: var(--text-secondary);" set:html={cluster} />
+    )}
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {items.map((item) => (
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex flex-col overflow-hidden rounded-2xl border transition hover:shadow-lg"
+          style="background: var(--card-bg); border-color: var(--border-color);"
+        >
+          <div class="overflow-hidden">
+            <img
+              src={item.image}
+              alt={`${item.name} near ${place.shortName} in ${place.city}, ${place.country}`}
+              loading="lazy"
+              decoding="async"
+              class="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-5 flex-1">
+            <h3 class="font-semibold text-lg mb-2" style="color: var(--text-primary);">{item.name}</h3>
+            {item.desc && <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{item.desc}</p>}
+            {n.ctaLabel && (
+              <span class="inline-block mt-3 text-sm font-medium" style="color: var(--accent);">{n.ctaLabel} ↗</span>
+            )}
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

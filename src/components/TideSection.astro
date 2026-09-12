@@ -1,0 +1,310 @@
+---
+import { getLangFromUrl, getMessagesByLang, intlLocale } from '../i18n/ui';
+import { getTide, eventMs, tideLevelKey } from '../lib/tide';
+import { weekdayLabel, monthDayLabel } from '../lib/weather';
+
+interface Props {
+  lang?: string;
+}
+
+const lang = Astro.props.lang || getLangFromUrl(Astro.url);
+const messages = getMessagesByLang(lang);
+const t = messages.tide ?? {};
+const locale = intlLocale(lang);
+
+// Server-side fetch with a warm-cache short-circuit, so the module ships as
+// HTML the moment the fragment is requested.
+const data = await getTide();
+
+const height = (value: number) => `${value >= 0 ? '+' : ''}${value.toFixed(2)}`;
+
+const countdown = (ms: number) => {
+  const diff = ms - Date.now();
+  if (!Number.isFinite(diff) || diff <= 0) return '';
+  const total = Math.max(1, Math.round(diff / 60000));
+  const hours = Math.floor(total / 60);
+  const minutes = total % 60;
+  const hourPart = hours > 0 ? `${hours}${t.hourUnit ?? ''} ` : '';
+  return `${hourPart}${minutes}${t.minUnit ?? ''}`;
+};
+
+const now = data?.current ?? null;
+const today = data?.today ?? null;
+const todayDate = now?.date ?? '';
+const levelKey = now && today ? tideLevelKey(now.height, today.min, today.max) : null;
+const trendIcon = now?.trend === 'rising' ? '↑' : '↓';
+
+const dayName = (date: string) => {
+  if (!todayDate || date === todayDate) return t.today ?? date;
+  const diff = Math.round(
+    (Date.parse(`${date}T12:00:00+09:00`) - Date.parse(`${todayDate}T12:00:00+09:00`)) / 86400000
+  );
+  if (diff === 1) return t.tomorrow ?? '';
+  return weekdayLabel(date, locale);
+};
+
+const todayEvents = (data?.days ?? []).find((day) => day.date === todayDate)?.events ?? [];
+
+const nextCards = [
+  { icon: '🌊', label: t.nextHigh, event: data?.next?.high ?? null },
+  { icon: '🪨', label: t.nextLow, event: data?.next?.low ?? null },
+];
+
+const advice: string[] = Array.isArray(t.advice) ? t.advice : [];
+---
+
+<section id="tide" class="section-padding" style="background: var(--bg-secondary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">
+      {t.title}
+    </h2>
+    {t.subtitle && (
+      <p class="text-center text-base sm:text-lg mb-10 max-w-3xl mx-auto" style="color: var(--text-secondary);">
+        {t.subtitle}
+      </p>
+    )}
+
+    {data && now ? (
+      <>
+        <div class="grid lg:grid-cols-2 gap-6 mb-8">
+          <!-- Current sea level -->
+          <div class="rounded-3xl border p-6 sm:p-8" style="background: var(--card-bg); border-color: var(--border-color);">
+            <span
+              class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wide"
+              style="background: var(--bg-tertiary); color: var(--text-secondary);"
+            >
+              {t.now}
+            </span>
+
+            <div class="flex items-baseline gap-3 mt-4">
+              <span class="font-display text-5xl sm:text-6xl font-bold leading-none" style="color: var(--text-primary);">
+                {height(now.height)}
+              </span>
+              <span class="text-2xl font-medium" style="color: var(--text-muted);">m</span>
+              <span class="text-3xl leading-none" aria-hidden="true" style="color: var(--accent);">{trendIcon}</span>
+            </div>
+
+            <div class="text-lg mt-3 font-medium" style="color: var(--text-primary);">
+              {now.trend === 'rising' ? t.rising : t.falling}
+              {levelKey && (
+                <span class="text-sm font-normal ml-2" style="color: var(--text-muted);">
+                  · {t.levels?.[levelKey]}
+                </span>
+              )}
+            </div>
+
+            <div class="text-sm mt-2" style="color: var(--text-muted);">
+              {t.heightRef} · {now.time}
+            </div>
+
+            {today && (
+              <div
+                class="rounded-2xl px-5 py-4 mt-6 text-sm"
+                style="background: var(--bg-tertiary); color: var(--text-secondary);"
+              >
+                <span class="font-medium" style="color: var(--text-primary);">{t.todayRange}：</span>
+                <strong style="color: var(--text-primary);">{(today.max - today.min).toFixed(2)} m</strong>
+                <span style="color: var(--text-muted);"> （{height(today.min)} ~ {height(today.max)}）</span>
+              </div>
+            )}
+          </div>
+
+          <!-- Next high / low + today's extremes -->
+          <div class="rounded-3xl border p-6 sm:p-8" style="background: var(--card-bg); border-color: var(--border-color);">
+            <h3 class="font-semibold text-lg mb-5" style="color: var(--text-primary);">{t.nextTitle}</h3>
+
+            <div class="grid sm:grid-cols-2 gap-4 mb-6">
+              {nextCards.map((card) => (
+                <div class="rounded-2xl px-5 py-4" style="background: var(--bg-tertiary);">
+                  <div class="text-xs mb-2" style="color: var(--text-muted);">
+                    <span aria-hidden="true">{card.icon}</span> {card.label}
+                  </div>
+                  {card.event ? (
+                    <>
+                      <div class="font-display text-2xl font-bold" style="color: var(--text-primary);">
+                        {card.event.time}
+                      </div>
+                      <div class="text-sm mt-1" style="color: var(--text-secondary);">
+                        {height(card.event.height)} m
+                        <span style="color: var(--text-muted);">
+                          · {t.inPre}{countdown(eventMs(card.event))}{t.inPost}
+                        </span>
+                      </div>
+                    </>
+                  ) : (
+                    <div class="text-sm" style="color: var(--text-muted);">—</div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {todayEvents.length > 0 && (
+              <>
+                <h4 class="text-sm font-semibold mb-3" style="color: var(--text-primary);">{t.todayTitle}</h4>
+                <ul class="space-y-2 text-sm">
+                  {todayEvents.map((event) => (
+                    <li
+                      class="flex items-center gap-3 rounded-xl px-3 py-2"
+                      style="background: var(--bg-tertiary);"
+                    >
+                      <span class="flex items-center gap-2 flex-1" style="color: var(--text-secondary);">
+                        <span aria-hidden="true">{event.type === 'high' ? '🌊' : '🪨'}</span>
+                        {event.type === 'high' ? t.high : t.low}
+                      </span>
+                      <span class="font-semibold tabular-nums" style="color: var(--text-primary);">{event.time}</span>
+                      <span class="tabular-nums w-16 text-right" style="color: var(--text-muted);">
+                        {height(event.height)} m
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </div>
+        </div>
+
+        <!-- Multi-day table -->
+        <div
+          class="hidden md:block overflow-hidden rounded-3xl border"
+          style="border-color: var(--border-color); background: var(--card-bg);"
+        >
+          <table class="w-full text-left border-collapse text-sm">
+            <caption class="sr-only">{t.forecastTitle}</caption>
+            <thead>
+              <tr style="background: var(--bg-secondary);">
+                <th scope="col" class="px-5 py-4 font-semibold text-xs uppercase tracking-wide" style="color: var(--text-muted);">
+                  {t.colDate}
+                </th>
+                <th scope="col" class="px-5 py-4 font-semibold text-xs uppercase tracking-wide" style="color: var(--text-muted);">
+                  🌊 {t.colHigh}
+                </th>
+                <th scope="col" class="px-5 py-4 font-semibold text-xs uppercase tracking-wide" style="color: var(--text-muted);">
+                  🪨 {t.colLow}
+                </th>
+                <th scope="col" class="px-5 py-4 font-semibold text-xs uppercase tracking-wide" style="color: var(--text-muted);">
+                  {t.colRange}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.days.map((day, i) => {
+                const highs = day.events.filter((event) => event.type === 'high');
+                const lows = day.events.filter((event) => event.type === 'low');
+                return (
+                  <tr
+                    style={`border-top: 1px solid var(--border-color);${
+                      i % 2 === 1 ? ' background: var(--bg-secondary);' : ''
+                    }`}
+                  >
+                    <th scope="row" class="px-5 py-4 align-top whitespace-nowrap">
+                      <span class="block font-semibold" style="color: var(--text-primary);">{dayName(day.date)}</span>
+                      <span class="text-xs" style="color: var(--text-muted);">{monthDayLabel(day.date, locale)}</span>
+                    </th>
+                    <td class="px-5 py-4 align-top" style="color: var(--text-secondary);">
+                      {highs.map((event) => (
+                        <span class="inline-flex items-baseline gap-1 mr-4 whitespace-nowrap">
+                          <span class="font-semibold tabular-nums" style="color: var(--text-primary);">{event.time}</span>
+                          <span class="text-xs tabular-nums" style="color: var(--text-muted);">{height(event.height)}m</span>
+                        </span>
+                      ))}
+                    </td>
+                    <td class="px-5 py-4 align-top" style="color: var(--text-secondary);">
+                      {lows.map((event) => (
+                        <span class="inline-flex items-baseline gap-1 mr-4 whitespace-nowrap">
+                          <span class="font-semibold tabular-nums" style="color: var(--text-primary);">{event.time}</span>
+                          <span class="text-xs tabular-nums" style="color: var(--text-muted);">{height(event.height)}m</span>
+                        </span>
+                      ))}
+                    </td>
+                    <td class="px-5 py-4 align-top tabular-nums" style="color: var(--text-secondary);">
+                      {day.range != null ? `${day.range.toFixed(2)} m` : '—'}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Mobile: stacked cards -->
+        <div class="md:hidden space-y-4">
+          {data.days.map((day) => {
+            const highs = day.events.filter((event) => event.type === 'high');
+            const lows = day.events.filter((event) => event.type === 'low');
+            return (
+              <article
+                class="rounded-2xl border p-5"
+                style="background: var(--card-bg); border-color: var(--border-color);"
+              >
+                <h3 class="font-semibold text-base mb-3 flex items-baseline gap-2" style="color: var(--text-primary);">
+                  {dayName(day.date)}
+                  <span class="text-xs font-normal" style="color: var(--text-muted);">{monthDayLabel(day.date, locale)}</span>
+                </h3>
+                <dl class="space-y-2 text-sm">
+                  <div class="flex items-baseline gap-3">
+                    <dt class="shrink-0 w-20" style="color: var(--text-muted);">🌊 {t.high}</dt>
+                    <dd class="flex-1 flex flex-wrap gap-x-4" style="color: var(--text-primary);">
+                      {highs.map((event) => (
+                        <span class="tabular-nums">
+                          <strong>{event.time}</strong>
+                          <span class="text-xs ml-1" style="color: var(--text-muted);">{height(event.height)}m</span>
+                        </span>
+                      ))}
+                    </dd>
+                  </div>
+                  <div class="flex items-baseline gap-3">
+                    <dt class="shrink-0 w-20" style="color: var(--text-muted);">🪨 {t.low}</dt>
+                    <dd class="flex-1 flex flex-wrap gap-x-4" style="color: var(--text-primary);">
+                      {lows.map((event) => (
+                        <span class="tabular-nums">
+                          <strong>{event.time}</strong>
+                          <span class="text-xs ml-1" style="color: var(--text-muted);">{height(event.height)}m</span>
+                        </span>
+                      ))}
+                    </dd>
+                  </div>
+                  {day.range != null && (
+                    <div class="flex items-baseline gap-3">
+                      <dt class="shrink-0 w-20" style="color: var(--text-muted);">{t.colRange}</dt>
+                      <dd class="tabular-nums" style="color: var(--text-secondary);">{day.range.toFixed(2)} m</dd>
+                    </div>
+                  )}
+                </dl>
+              </article>
+            );
+          })}
+        </div>
+      </>
+    ) : (
+      <div
+        class="rounded-3xl border p-10 text-center text-sm"
+        style="background: var(--card-bg); border-color: var(--border-color); color: var(--text-secondary);"
+      >
+        {t.unavailable}
+      </div>
+    )}
+
+    {advice.length > 0 && (
+      <div
+        class="rounded-3xl border p-6 sm:p-8 mt-8"
+        style="background: var(--card-bg); border-color: var(--border-color);"
+      >
+        <h3 class="font-semibold text-lg mb-5" style="color: var(--text-primary);">{t.adviceTitle}</h3>
+        <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-sm">
+          {advice.map((item) => (
+            <li class="flex gap-2 leading-relaxed" style="color: var(--text-secondary);">
+              <span aria-hidden="true" style="color: var(--accent);">•</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {t.footerNote && (
+      <p class="text-xs leading-relaxed mt-6 text-center max-w-3xl mx-auto" style="color: var(--text-muted);">
+        {t.footerNote}
+      </p>
+    )}
+  </div>
+</section>

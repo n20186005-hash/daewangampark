@@ -1,9 +1,10 @@
 ---
 import { getI18n } from '../i18n/ui';
+import { galleryFile } from '../config';
 const { messages } = getI18n(Astro.url);
 const reviews = messages.reviews;
 const featured = reviews.featured ?? [];
-const bg = '/gallery/daewangampark-2.jpg';
+const bg = galleryFile(2);
 ---
 
 {featured.length > 0 && (

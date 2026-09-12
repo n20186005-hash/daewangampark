@@ -1,0 +1,80 @@
+---
+import { getI18n } from '../i18n/ui';
+
+const { messages } = getI18n(Astro.url);
+const s = messages.visitRoutes ?? {};
+const labels = s.labels ?? {};
+const routes = Array.isArray(s.routes) ? s.routes : [];
+---
+
+<section id="routes" class="section-padding" style="background: var(--bg-tertiary);">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">
+      {s.title}
+    </h2>
+    {s.subtitle && (
+      <p class="text-center text-base sm:text-lg mb-10 max-w-3xl mx-auto" style="color: var(--text-secondary);">
+        {s.subtitle}
+      </p>
+    )}
+
+    <div class="grid gap-6 lg:grid-cols-2">
+      {routes.map((route: any) => (
+        <article
+          class="rounded-3xl border p-6 flex flex-col"
+          style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);"
+        >
+          <div class="flex items-start gap-3 mb-4">
+            <span class="text-3xl leading-none" aria-hidden="true">{route.icon}</span>
+            <div>
+              <h3 class="font-display text-xl font-semibold" style="color: var(--text-primary);">{route.name}</h3>
+              {route.duration && (
+                <p class="text-sm mt-1" style="color: var(--text-muted);">
+                  ⏱️ {labels.duration} · {route.duration}
+                </p>
+              )}
+            </div>
+          </div>
+
+          {route.bestFor && (
+            <p class="text-sm leading-relaxed mb-5" style="color: var(--text-secondary);">
+              <span class="font-medium" style="color: var(--text-primary);">{labels.bestFor}：</span>
+              {route.bestFor}
+            </p>
+          )}
+
+          {(route.timeline ?? []).length > 0 && (
+            <ol class="relative space-y-4 pl-6 mb-5" style="border-left: 2px solid var(--border-color);">
+              {route.timeline.map((step: any) => (
+                <li class="relative">
+                  <span
+                    class="absolute -left-[1.85rem] top-1 w-3 h-3 rounded-full"
+                    style="background: var(--accent); box-shadow: 0 0 0 3px var(--bg-tertiary);"
+                    aria-hidden="true"
+                  ></span>
+                  <div class="text-xs font-bold tracking-wide mb-1" style="color: var(--accent);">{step.time}</div>
+                  <div class="text-sm leading-relaxed" style="color: var(--text-secondary);">{step.text}</div>
+                </li>
+              ))}
+            </ol>
+          )}
+
+          {route.note && (
+            <p
+              class="text-xs leading-relaxed mt-auto pt-4 border-t"
+              style="border-color: var(--border-color); color: var(--text-muted);"
+            >
+              {route.note}
+            </p>
+          )}
+        </article>
+      ))}
+    </div>
+
+    {s.caveat && (
+      <p class="text-xs leading-relaxed mt-8 text-center max-w-3xl mx-auto" style="color: var(--text-muted);">
+        {s.caveat}
+      </p>
+    )}
+  </div>
+</section>

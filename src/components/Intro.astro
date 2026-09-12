@@ -1,8 +1,17 @@
 ---
 import { getI18n } from '../i18n/ui';
+import { place } from '../config';
 const { messages } = getI18n(Astro.url);
 const intro = messages.intro;
 const om = messages.officialManagement;
+
+// 4.1 First-paragraph equal-statement: alias {{ATTRACTION_SHORT_NAME}} with {{ATTRACTION_FULL_NAME}}.
+const entityStatement = (intro.entityStatement ?? '')
+  .replaceAll('{attraction}', place.fullName)
+  .replaceAll('{shortName}', place.shortName)
+  .replaceAll('{city}', place.city)
+  .replaceAll('{state}', place.stateProvince)
+  .replaceAll('{country}', place.country);
 ---
 
 <section id="about" class="section-padding" style="background: var(--bg-secondary);">
@@ -10,6 +19,9 @@ const om = messages.officialManagement;
     <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-start">
       <div>
         <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5" style="color: var(--text-primary);">{intro.title}</h2>
+        {entityStatement && (
+          <p class="text-lg leading-relaxed mb-4" style="color: var(--text-primary);" set:html={entityStatement} />
+        )}
         <p class="text-lg leading-relaxed mb-8" style="color: var(--text-secondary);">{intro.description}</p>
 
         <div class="rounded-2xl p-6 border" style="background: var(--bg-tertiary); border-color: var(--border-color);">

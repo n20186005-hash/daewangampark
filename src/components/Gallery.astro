@@ -1,12 +1,9 @@
 ---
 import { getI18n } from '../i18n/ui';
+import { galleryFiles } from '../config';
 const { messages } = getI18n(Astro.url);
 const g = messages.gallery;
-const totalImages = 24;
-const images = Array.from({ length: totalImages }, (_, i) => {
-  const n = String(i + 1);
-  return `/gallery/daewangampark-${n}.jpg`;
-});
+const images = galleryFiles();
 const photoAlts = g.photoAlts ?? images.map(() => g.photoAlt);
 ---
 

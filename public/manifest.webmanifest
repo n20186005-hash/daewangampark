@@ -1,0 +1,41 @@
+{
+  "name": "Daewangam Park (대왕암공원) · Ulsan Visitor Guide",
+  "short_name": "Daewangam Park",
+  "description": "Complete visitor guide to Daewangam Park in Dong-gu, Ulsan, South Korea — the 303 m sea suspension bridge, coastal rock formations, opening hours, transport and travel tips.",
+  "id": "/ko",
+  "start_url": "/ko",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f2015",
+  "theme_color": "#0f2015",
+  "lang": "ko",
+  "dir": "ltr",
+  "categories": ["travel", "navigation", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Location & map",
+      "short_name": "Map",
+      "url": "/ko#map"
+    },
+    {
+      "name": "FAQ",
+      "short_name": "FAQ",
+      "url": "/ko#faq"
+    }
+  ]
+}

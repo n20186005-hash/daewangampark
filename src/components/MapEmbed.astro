@@ -1,8 +1,10 @@
 ---
 import { getI18n } from '../i18n/ui';
+import { place } from '../config';
 const { messages } = getI18n(Astro.url);
 const m = messages.mapSection;
-const embedUrl = 'https://www.google.com/maps?q=%EB%8C%80%EC%99%95%EC%95%94%EA%B3%B5%EC%9B%90&output=embed';
+const embedUrl = place.mapsEmbedSrc;
+const mapTitle = `${place.fullName} (${place.fullNameLocal}) · ${place.streetAddress}, ${place.city}, ${place.country}`;
 ---
 
 <section id="map" class="section-padding" style="background: var(--bg-secondary);">
@@ -18,15 +20,24 @@ const embedUrl = 'https://www.google.com/maps?q=%EB%8C%80%EC%99%95%EC%95%94%EA%B
         height="420"
         style="border:0;"
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title={m.title}
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"
+        title={mapTitle}
       ></iframe>
     </div>
 
-    <div class="text-center mt-8">
-      <a href={m.mapsUrl} target="_blank" rel="noopener noreferrer" class="inline-flex w-full sm:w-auto justify-center px-8 py-3 rounded-full font-semibold text-white" style="background: var(--accent);">
+    <div class="text-center mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+      <a href={m.mapsUrl || place.mapsShareUrl} target="_blank" rel="noopener noreferrer" class="inline-flex w-full sm:w-auto justify-center px-8 py-3 rounded-full font-semibold text-white" style="background: var(--accent);">
         📍 {m.openMaps}
       </a>
     </div>
+
+    {/* Authoritative outbound link to the official / government tourism portal */}
+    <p class="text-center text-sm mt-6" style="color: var(--text-secondary);">
+      {m.officialPortalPrefix}{' '}
+      <a href={place.govtTourismUrl} target="_blank" rel="noopener noreferrer" class="font-medium" style="color: var(--accent);">
+        {m.officialPortalName}
+      </a>.
+    </p>
   </div>
 </section>

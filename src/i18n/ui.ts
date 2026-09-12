@@ -42,11 +42,26 @@ export function buildAlternates(path = ''): Record<string, string> {
     en: mk('en'),
     ja: mk('ja'),
     ko: mk('ko'),
-    xDefault: mk('ko'),
+    // English is the fallback for every unmatched language or region: it is the
+    // site's largest audience by far, so it beats sending those users to Korean.
+    xDefault: mk('en'),
   };
 }
 
 export function htmlLangAttr(lang: string): string {
   if (lang === 'zh') return 'zh-CN';
   return lang;
+}
+
+/** BCP-47 locale tag used for server-side date/number formatting. */
+export function intlLocale(lang: string): string {
+  if (lang === 'zh') return 'zh-CN';
+  if (lang === 'ja') return 'ja-JP';
+  if (lang === 'ko') return 'ko-KR';
+  return 'en-US';
+}
+
+/** Resolve a message catalogue directly from a language code. */
+export function getMessagesByLang(lang: string): any {
+  return ui[(languagesList as readonly string[]).includes(lang) ? lang : defaultLang];
 }

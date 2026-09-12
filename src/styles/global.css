@@ -41,6 +41,9 @@
   --tag-bg: var(--color-sand-200);
   --tag-text: var(--color-nature-700);
   --map-border: var(--color-sand-300);
+  --danger: #b42318;
+  --danger-bg: #fef3f2;
+  --danger-border: #fda29b;
 }
 
 [data-theme="dark"] {
@@ -59,6 +62,9 @@
   --tag-bg: #1e3a28;
   --tag-text: #a0c4a8;
   --map-border: #1e3a28;
+  --danger: #ff8f85;
+  --danger-bg: rgba(180, 35, 24, 0.18);
+  --danger-border: rgba(255, 143, 133, 0.4);
 }
 
 * {
@@ -316,6 +322,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.12);
   color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.live-value {
+  display: inline-block;
+  min-width: 2.5rem;
+  font-weight: 600;
   text-align: center;
   font-variant-numeric: tabular-nums;
 }

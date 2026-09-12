@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import NoticeBanner from '../components/NoticeBanner.astro';
 import Footer from '../components/Footer.astro';
 import { getLangFromUrl, buildAlternates, htmlLangAttr, getI18n } from '../i18n/ui';
-import { ogLocale, siteConfig } from '../config';
+import { ogLocale, siteConfig, place, galleryUrl } from '../config';
 
 interface Props {
   title: string;
@@ -18,28 +18,49 @@ const htmlLang = htmlLangAttr(lang);
 const alts = buildAlternates(path);
 const canonical = alts[lang] ?? alts.zh;
 const { messages } = getI18n(Astro.url);
-const attractionName = messages.header?.siteName ?? messages.footer?.siteName ?? messages.meta.title;
+const attractionName = `${place.fullName} (${place.fullNameLocal})`;
+
+// Entity binding: alias the domain meaning ({{ATTRACTION_SHORT_NAME}}) with the
+// official full name so search engines treat "daewangampark.com" as this entity.
+// Both Chinese scripts are listed because searchers use 大王岩公園 (traditional)
+// and 大王岩公园 (simplified) for the very same park.
+const alternateNames = [
+  place.shortName,
+  place.fullNameLocal,
+  `${place.city} ${place.fullName}`,
+  '울산 대왕암공원',
+  '大王岩公園',
+  '大王岩公园',
+];
+
+const imageGallery = [place.heroImage, galleryUrl(2), galleryUrl(3), galleryUrl(9)];
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'TouristAttraction',
-  name: attractionName,
+  '@id': `${place.baseUrl}/#attraction`,
+  name: place.fullName,
+  alternateName: alternateNames,
   description: messages.meta.description,
   url: canonical,
-  image: 'https://daewangampark.com/gallery/daewangampark-1.jpg',
+  image: imageGallery,
+  isAccessibleForFree: true,
+  publicAccess: true,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '95 Deungdae-ro',
+    streetAddress: `${place.streetAddress} (${place.fullName})`,
     addressLocality: 'Dong-gu',
-    addressRegion: 'Ulsan',
-    addressCountry: 'KR',
+    addressRegion: place.stateProvince,
+    postalCode: place.postalCode,
+    addressCountry: place.countryCode,
   },
-  telephone: '+82-52-209-3738',
+  telephone: place.telephone,
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 35.4924,
-    longitude: 129.4396,
+    latitude: place.latitude,
+    longitude: place.longitude,
   },
+  hasMap: place.mapsShareUrl,
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
@@ -48,7 +69,6 @@ const jsonLd = {
       closes: '23:59',
     },
   ],
-  isAccessibleForFree: true,
   offers: [
     {
       '@type': 'Offer',
@@ -61,9 +81,14 @@ const jsonLd = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.6',
-    reviewCount: '5406',
+    reviewCount: '5419',
   },
-  sameAs: ['https://maps.app.goo.gl/VzccMpX7nCxzrbFdA'],
+  sameAs: [
+    place.mapsShareUrl,
+    place.govtTourismUrl,
+    place.govtTourismUrlLocal,
+    place.govtTourismUrlEn,
+  ],
 };
   const breadcrumbLd = (() => {
     const bc = messages.breadcrumb;
@@ -94,23 +119,51 @@ const jsonLd = {
     <link rel="alternate" hreflang="ko" href={alts.ko} />
     <link rel="alternate" hreflang="x-default" href={alts.xDefault} />
 
+    <!-- Geo / entity meta: bind the page to one physical attraction -->
+    <meta name="geo.region" content="KR-31" />
+    <meta name="geo.placename" content={`${place.city}, ${place.stateProvince}`} />
+    <meta name="geo.position" content={`${place.latitude};${place.longitude}`} />
+    <meta name="ICBM" content={`${place.latitude}, ${place.longitude}`} />
+
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={attractionName} />
     <meta property="og:locale" content={ogLocale[lang] ?? lang} />
+    <meta property="og:image" content={place.heroImage} />
+    <meta property="og:image:secure_url" content={place.heroImage} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content={String(place.heroImageWidth)} />
+    <meta property="og:image:height" content={String(place.heroImageHeight)} />
+    <meta property="og:image:alt" content={`${place.fullName} in ${place.city}`} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={place.heroImage} />
+    <meta name="twitter:image:alt" content={`${place.fullName} in ${place.city}`} />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content={place.themeColor} />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content={place.shortName} />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
 
     <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />
     <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-HXM22WWPKP"></script>
-    <script is:inline>
+    <!-- Google tag (Google Analytics 4) -->
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${place.ga4Id}`}></script>
+    <script is:inline define:vars={{ ga4Id: place.ga4Id }}>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-HXM22WWPKP');
+      gtag('config', ga4Id);
     </script>
 
     <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)}></script>
@@ -124,6 +177,15 @@ const jsonLd = {
             document.documentElement.setAttribute('data-theme', 'dark');
           }
         } catch (e) {}
+      })();
+    </script>
+
+    <script is:inline>
+      (function () {
+        if (!('serviceWorker' in navigator)) return;
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js').catch(function () {});
+        });
       })();
     </script>
 

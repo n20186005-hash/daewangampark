@@ -1,0 +1,119 @@
+---
+import { getI18n } from '../i18n/ui';
+
+const { messages } = getI18n(Astro.url);
+const s = messages.seasonalStrategy ?? {};
+const columns = s.columns ?? {};
+const rows = Array.isArray(s.rows) ? s.rows : [];
+---
+
+<section id="seasons" class="section-padding" style="background: var(--bg-tertiary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">
+      {s.title}
+    </h2>
+    {s.subtitle && (
+      <p class="text-center text-base sm:text-lg mb-10 max-w-3xl mx-auto" style="color: var(--text-secondary);">
+        {s.subtitle}
+      </p>
+    )}
+
+    <!-- Desktop: comparison table -->
+    <div
+      class="hidden md:block overflow-hidden rounded-3xl border"
+      style="border-color: var(--border-color); background: var(--card-bg);"
+    >
+      <table class="w-full text-left border-collapse text-sm">
+        <caption class="sr-only">{s.title}</caption>
+        <thead>
+          <tr style="background: var(--bg-secondary);">
+            <th scope="col" class="px-5 py-4 font-semibold text-xs uppercase tracking-wide" style="color: var(--text-muted);">
+              {columns.season}
+            </th>
+            <th scope="col" class="px-5 py-4 font-semibold text-xs uppercase tracking-wide" style="color: var(--text-muted);">
+              🌤️ {columns.weather}
+            </th>
+            <th scope="col" class="px-5 py-4 font-semibold text-xs uppercase tracking-wide" style="color: var(--text-muted);">
+              🌊 {columns.water}
+            </th>
+            <th scope="col" class="px-5 py-4 font-semibold text-xs uppercase tracking-wide" style="color: var(--text-muted);">
+              🐦 {columns.wildlife}
+            </th>
+            <th scope="col" class="px-5 py-4 font-semibold text-xs uppercase tracking-wide" style="color: var(--text-muted);">
+              🎒 {columns.strategy}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row: any, i: number) => (
+            <tr
+              style={`border-top: 1px solid var(--border-color);${
+                i % 2 === 1 ? ' background: var(--bg-secondary);' : ''
+              }`}
+            >
+              <th scope="row" class="px-5 py-5 align-top font-semibold" style="color: var(--text-primary);">
+                <span class="flex items-center gap-2 whitespace-nowrap">
+                  <span aria-hidden="true" class="text-xl leading-none">{row.icon}</span>
+                  {row.season}
+                </span>
+              </th>
+              <td class="px-5 py-5 align-top leading-relaxed" style="color: var(--text-secondary);">{row.weather}</td>
+              <td class="px-5 py-5 align-top leading-relaxed" style="color: var(--text-secondary);">{row.water}</td>
+              <td class="px-5 py-5 align-top leading-relaxed" style="color: var(--text-secondary);">{row.wildlife}</td>
+              <td class="px-5 py-5 align-top leading-relaxed" style="color: var(--text-secondary);">
+                <span class="font-medium" style="color: var(--text-primary);">{row.strategy}</span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Mobile: stacked cards -->
+    <div class="md:hidden space-y-5">
+      {rows.map((row: any) => (
+        <article
+          class="rounded-2xl border p-5"
+          style="background: var(--card-bg); border-color: var(--border-color);"
+        >
+          <h3 class="font-semibold text-lg mb-4 flex items-center gap-2" style="color: var(--text-primary);">
+            <span aria-hidden="true" class="text-2xl leading-none">{row.icon}</span>
+            {row.season}
+          </h3>
+          <dl class="space-y-3 text-sm leading-relaxed">
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: var(--text-muted);">
+                🌤️ {columns.weather}
+              </dt>
+              <dd style="color: var(--text-secondary);">{row.weather}</dd>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: var(--text-muted);">
+                🌊 {columns.water}
+              </dt>
+              <dd style="color: var(--text-secondary);">{row.water}</dd>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: var(--text-muted);">
+                🐦 {columns.wildlife}
+              </dt>
+              <dd style="color: var(--text-secondary);">{row.wildlife}</dd>
+            </div>
+            <div>
+              <dt class="text-xs font-semibold uppercase tracking-wide mb-1" style="color: var(--text-muted);">
+                🎒 {columns.strategy}
+              </dt>
+              <dd class="font-medium" style="color: var(--text-primary);">{row.strategy}</dd>
+            </div>
+          </dl>
+        </article>
+      ))}
+    </div>
+
+    {s.sourceNote && (
+      <p class="text-xs leading-relaxed mt-8 max-w-3xl mx-auto text-center" style="color: var(--text-muted);">
+        {s.sourceNote}
+      </p>
+    )}
+  </div>
+</section>

@@ -8,9 +8,13 @@ const items = [
   { label: h.history, href: '#history' },
   { label: n.transport, href: '#transport' },
   { label: n.route, href: '#route' },
+  { label: n.weather, href: '#weather' },
+  { label: n.tide, href: '#tide' },
   { label: n.visit, href: '#visit' },
+  { label: n.nearby, href: '#nearby' },
   { label: n.faq, href: '#faq' },
-];
+  { label: n.sources, href: '#sources' },
+].filter((it) => !!it.label);
 ---
 
 <div class="section-nav" id="section-nav" aria-label="Section navigation">

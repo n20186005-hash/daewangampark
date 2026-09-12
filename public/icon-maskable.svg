@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Daewangam Park icon">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#163a26"/>
+      <stop offset="60%" stop-color="#0f2015"/>
+      <stop offset="100%" stop-color="#0a1710"/>
+    </linearGradient>
+    <linearGradient id="sea2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a90a4"/>
+      <stop offset="100%" stop-color="#2d6375"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#sky2)"/>
+  <circle cx="340" cy="196" r="44" fill="#e3913f" opacity="0.9"/>
+  <path d="M64 356c56 0 56-22 112-22s56 22 112 22 56-22 112-22 56 22 112 22v96H64z" fill="url(#sea2)"/>
+  <path d="M150 330c0-38 28-62 62-62 12 0 22 3 30 8 10-7 23-12 36-12 34 0 60 24 60 66z" fill="#1e3a28"/>
+  <path d="M168 276l44-34 34 27 28-38 42 38" fill="none" stroke="#e3913f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M128 258h288" stroke="#e3913f" stroke-width="9" stroke-linecap="round" opacity="0.85"/>
+</svg>

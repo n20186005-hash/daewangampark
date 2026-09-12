@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Daewangam Park (대왕암공원) | Dong-gu, Ulsan, South Korea · Coastal cliff park, 303 m sea bridge & the twin guardian-dragon legend",
-    "description": "The complete guide to Daewangam Park (Korean: 대왕암공원): a coastal cliff park on the East Sea in Dong-gu, Ulsan. A 303 m sea suspension bridge (출렁다리) links the pine-forest shore to the jagged Daewangam islet, framed by a pine forest trail, the Ulgi Lighthouse and East-Sea sunrises. In the more careful reading of the legend, King Munmu became a guardian sea dragon off Gyeongju, while his queen consort became the female guardian dragon associated with Ulsan's Daewangam rocks. The park is open 24 hours and free; the bridge is free to cross. Hours, transport, history, photo spots and visitor reviews all in one place."
+    "title": "Daewangam Park, Ulsan: Suspension Bridge & Travel Guide",
+    "description": "Daewangam Park, Ulsan: walk the 303 m sea suspension bridge to the Daewangam islet. Free entry, open 24 h — with map, parking, transport and photo tips."
   },
   "header": {
     "siteName": "Daewangam Park",
@@ -41,10 +41,21 @@
     "transport": "Transport",
     "lodging": "Lodging",
     "visit": "Visit tips",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "nearby": "Nearby",
+    "sources": "Sources",
+    "weather": "Weather",
+    "services": "Services",
+    "seasons": "Seasons",
+    "audience": "By audience",
+    "routes": "Itineraries",
+    "responsibility": "Visitor care",
+    "tide": "Tides",
+    "weather": "Weather"
   },
   "hero": {
     "title": "Daewangam Park (대왕암공원)",
+    "h1City": "Dong-gu, Ulsan · South Korea",
     "subtitle": "A coastal cliff park on the East Sea in Dong-gu, Ulsan. A 303 m sea suspension bridge (출렁다리) soars across the water, linking the pine-forest shore to the jagged Daewangam islet. In the fuller legend, King Munmu of Silla became a guardian sea dragon off Gyeongju, while his queen consort became the female guardian dragon associated with these Ulsan rocks, together watching over the East Sea. Pine, lighthouse and sunrise meet here; the park is free and open 24 hours.",
     "rating": "4.6 (5,406)",
     "reviewCount": "5,406 reviews",
@@ -79,7 +90,7 @@
       "seaGlare": "Sunrise tip: Daewangam faces the East Sea and is a popular Ulsan sunrise spot. The first light on the rocks and cables is the golden window; winter mornings are cold — mind the sea breeze.",
       "arriveLabel": "Suggested arrival",
       "blueHourLabel": "Blue hour",
-      "lightCaption": "Light data computed live by Open-Meteo"
+      "lightCaption": "Sunrise and sunset are computed live for today"
     }
   },
   "quickFactsDashboard": {
@@ -158,6 +169,7 @@
   },
   "intro": {
     "title": "Getting to know Daewangam Park",
+    "entityStatement": "Welcome to <strong>{attraction}</strong>, widely recognized as the central <strong>{shortName}</strong>. Located in the heart of <strong>{city}</strong>, <strong>{state}</strong>, <strong>{country}</strong>, this destination serves as a primary hub for travelers visiting the region.",
     "description": "Daewangam Park (Korean: 대왕암공원) sits on the East Sea in Dong-gu, Ulsan — a pine forest park built along coastal cliffs. A 303 m sea suspension bridge (출렁다리) links the jagged Daewangam islet to the shore; the bridge is free to cross and gaze over the sea. Facing the East Sea on three sides, with pines and waves and the Ulgi Lighthouse standing among them, it carries a court legend more precisely read as a twin guardian-dragon story: King Munmu became a guardian sea dragon off Gyeongju, while the queen consort came to be associated with Ulsan's Daewangam rocks.",
     "visitGuide": {
       "title": "Visitor guide",
@@ -515,7 +527,9 @@
     "title": "How to get here",
     "subtitle": "95 Deungdae-ro, Dong-gu, Ulsan, South Korea (Plus Code: FCRQ+XR) · Tel +82 52-209-3738",
     "openMaps": "Open in Google Maps",
-    "mapsUrl": "https://maps.app.goo.gl/VzccMpX7nCxzrbFdA"
+    "mapsUrl": "https://maps.app.goo.gl/VzccMpX7nCxzrbFdA",
+    "officialPortalPrefix": "For official updates and regional tourism information, visit",
+    "officialPortalName": "Ulsan Metropolitan City / Korea Tourism Organization Official Tourism Portal"
   },
   "footer": {
     "siteName": "Daewangam Park (대왕암공원)",
@@ -540,7 +554,40 @@
     ],
     "disclaimer": "This website is an independent non-profit visitor-information project. We are not affiliated with any government agency or official organization.",
     "dataSource": "Attraction information on this site is checked against public materials from Ulsan Metropolitan City, Dong-gu Ulsan, and the Korea Tourism Organization (VisitKorea), with no commercial recommendations.",
-    "dataSourceLabel": "Data source · Data Source"
+    "dataSourceLabel": "Data source · Data Source",
+    "imageCopyright": "The ownership and copyright of all images displayed on this website belong to the original photographers."
+  },
+  "nearbyLandmarks": {
+    "title": "Landmarks & Attractions Around Daewangam Park",
+    "subtitle": "The coastal places that link naturally to Daewangam Park on foot or by a short drive, gathered in one structure.",
+    "cluster": "When visiting <strong>{attraction}</strong>, visitors can easily explore surrounding historical landmarks and points of interest, including <strong>{landmark1}</strong> and <strong>{landmark2}</strong>.",
+    "ctaLabel": "View official source",
+    "items": [
+      { "name": "Ulgi Lighthouse (울기등대)", "desc": "One of Korea's earliest modern lighthouses, connected to the Daewangam coastal walk. A viewpoint that frames the East Sea together with the Daewangam rocks." },
+      { "name": "Ilsan Beach (일산해수욕장)", "desc": "An East-Sea sand beach a short drive from the park, ideal for a summer swim or a sunset stroll — completing a 'sea–park–lighthouse' half-day route." },
+      { "name": "Dong-gu Coastal Trail (동구 해안 산책로)", "desc": "A seaside deck and promenade running directly on from Daewangam Park, letting you walk the rock formations, breakwaters and open-sea views at low effort." }
+    ]
+  },
+  "sources": {
+    "title": "Sources & Official References",
+    "subtitle": "The information in this guide is cross-checked against the official and government materials below, with no commercial recommendations.",
+    "geoChainLabel": "Geographic hierarchy",
+    "officialTitle": "Official · government · public tourism sources",
+    "officialPortalPrefix": "For official updates and regional tourism information, visit",
+    "officialPortalName": "Ulsan Metropolitan City / Korea Tourism Organization Official Tourism Portal",
+    "dataVerified": "Opening hours, admission and transport details have been verified against public materials from Ulsan Metropolitan City, Dong-gu Ulsan, and the Korea Tourism Organization (VisitKorea). Conditions may change — please confirm via the official channels before you travel.",
+    "imageCopyright": "The ownership and copyright of all images displayed on this website belong to the original photographers.",
+    "eeatPoints": [
+      "This is an independent, non-profit visitor-information project dedicated to a single attraction, Daewangam Park, and is affiliated with no institution or business.",
+      "Every statement is written by cross-checking official tourism materials with public geographic data (coordinates, address, Plus Code).",
+      "Original-source links are provided for maps, coordinates and opening details so they can be re-verified on the official portals."
+    ],
+    "govLinks": [
+      { "name": "Ulsan Metropolitan City Official Tourism Portal (ulsan.go.kr)", "url": "https://www.ulsan.go.kr/" },
+      { "name": "Daewangam Park Official Website · Dong-gu, Ulsan", "url": "https://daewangam.donggu.ulsan.kr/" },
+      { "name": "Dong-gu, Ulsan Official Website (donggu.ulsan.kr)", "url": "https://www.donggu.ulsan.kr/" },
+      { "name": "Korea Tourism Organization VisitKorea (official EN portal)", "url": "https://english.visitkorea.or.kr" }
+    ]
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -637,6 +684,10 @@
           {
             "q": "Nearby fuel or EV charging?",
             "a": "Public lots have EV chargers; traditional fuel stations are along Ulsan city and Dong-gu roads — self-drive visitors can refill en route."
+          },
+          {
+            "q": "Where is Daewangam Park located?",
+            "a": "Daewangam Park is at 95 Deungdae-ro, Dong-gu, Ulsan, South Korea (postal code 44058), on the East Sea coast at the eastern edge of the city. Search '대왕암공원' in any maps app; bus, KTX and driving routes are set out in the transport section above."
           }
         ]
       },
@@ -669,6 +720,14 @@
           {
             "q": "Can I visit in bad weather?",
             "a": "Yes — the park is open in any weather. But in strong wind, heavy rain or thunderstorms the bridge may close; take care, wear non-slip shoes, watch the forecast; rocks are slippery when wet."
+          },
+          {
+            "q": "How long is the Daewangam suspension bridge, and when can I cross it?",
+            "a": "The sea suspension bridge (출렁다리) is 303 m long — Ulsan's first sea bridge — and crossing it is free, like the park itself, which stays open 24 hours. In strong wind, heavy rain or thunderstorms it may close temporarily for safety."
+          },
+          {
+            "q": "Where and when can I watch the sunrise?",
+            "a": "Daewangam faces the East Sea, so the sun rises straight out of the water beyond the islet — one of Ulsan's classic sunrise spots. Arrive about 30 minutes early for the pre-dawn colour; today's exact sunrise and sunset times are shown in the weather section above."
           }
         ]
       },
@@ -885,5 +944,300 @@
       "Before booking confirm breakfast, parking and chargers (key for self-drive).",
       "Book ahead in peak/holidays to avoid no-room or high price."
     ]
+  },
+  "weather": {
+    "title": "Live weather and 7-day outlook",
+    "subtitle": "Daewangam Park is an open-air site of sea cliffs and a suspension bridge. Check today's feels-like temperature, wind and rain chance before you set off.",
+    "now": "Now",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "gust": "Gusts",
+    "forceShort": "Force {n}",
+    "uvIndex": "UV index",
+    "precipChance": "Chance of rain",
+    "sunrise": "Sunrise",
+    "sunset": "Sunset",
+    "forecastTitle": "7-day forecast",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "compass": {
+      "n": "N",
+      "ne": "NE",
+      "e": "E",
+      "se": "SE",
+      "s": "S",
+      "sw": "SW",
+      "w": "W",
+      "nw": "NW"
+    },
+    "uvLevels": {
+      "low": "Low",
+      "moderate": "Moderate",
+      "high": "High",
+      "veryHigh": "Very high",
+      "extreme": "Extreme"
+    },
+    "conditions": {
+      "clear": "Clear",
+      "mainlyClear": "Mainly clear",
+      "partlyCloudy": "Partly cloudy",
+      "overcast": "Overcast",
+      "fog": "Fog",
+      "drizzle": "Drizzle",
+      "freezingDrizzle": "Freezing drizzle",
+      "rain": "Rain",
+      "freezingRain": "Freezing rain",
+      "snow": "Snow",
+      "snowGrains": "Snow grains",
+      "rainShowers": "Rain showers",
+      "snowShowers": "Snow showers",
+      "thunderstorm": "Thunderstorm",
+      "severeThunderstorm": "Severe thunderstorm",
+      "unknown": "No data"
+    },
+    "brief": {
+      "adviceTitle": "How to plan today",
+      "outfitTitle": "What to wear",
+      "planTitle": "What to do",
+      "itemsTitle": "What to pack",
+      "riskTitle": "Take care",
+      "outfit": {
+        "rain": "Rain is falling — a waterproof jacket or quick-drying clothes work best.",
+        "rainProb": "There is a {prob}% chance of rain. Pack rain gear and take care on wet ground.",
+        "hot": "It reaches {tmax}°C today. Choose light, breathable clothing and stay out of the midday sun.",
+        "cold": "It only reaches {tmax}°C today. Bring a warm outer layer.",
+        "cool": "It reaches {tmax}°C today, so a light jacket is worth taking.",
+        "bigSwing": "The temperature swings {swing}°C between day and night — bring a layer you can take off easily.",
+        "windy": "It is windy. A cuffed windbreaker works well; skip loose long skirts.",
+        "uv": "UV is strong, so long sleeves or sun-protective clothing are safer.",
+        "mild": "Temperatures are comfortable — a light long-sleeve or short-sleeve shirt is enough."
+      },
+      "plan": {
+        "storm": "Thunderstorms are forecast. Do not climb to high ground, swim in the sea, or shelter under trees.",
+        "rain": "Avoid long stretches outdoors. Boat trips may be cancelled, so line up an indoor rest stop first.",
+        "snow": "Snow is falling and paths may freeze — take it slowly.",
+        "drizzle": "Light rain. Outdoor activities lose their shine and the deck and rocks get slippery.",
+        "fog": "Visibility is poor, so sea and hill views will not amount to much.",
+        "clear": "Clear skies — great for outdoor sightseeing and for sunrise or sunset.",
+        "cloudy": "Patchy cloud gives soft, even light: good for photos and easy long walks.",
+        "overcast": "Overcast skies mean no harsh sun — comfortable for a slow, long wander.",
+        "mild": "Conditions are steady, so a normal outdoor itinerary works fine.",
+        "hot": "Shorten your time outdoors and avoid the midday heat.",
+        "cold": "Do not stay outside too long, and keep warm.",
+        "windyClosed": "Winds are strong, so boat trips and outdoor rides may be suspended.",
+        "coastal": "Rocks, decks and waterside steps are slippery. Do not step down onto the rocks even at low tide."
+      },
+      "items": {
+        "umbrella": "Folding umbrella",
+        "raincoat": "Rain jacket (avoid a long umbrella in strong wind)",
+        "sunscreen": "Sunscreen",
+        "sunglasses": "Sunglasses",
+        "hat": "Hat",
+        "water": "Plenty of water",
+        "scarf": "Scarf",
+        "coat": "Warm coat",
+        "jacket": "Light jacket",
+        "gripShoes": "Grippy shoes",
+        "mask": "Face mask"
+      },
+      "risk": {
+        "thunderstorm": "Lightning: thunderstorms are forecast. Avoid climbing, swimming in the sea and sheltering under trees.",
+        "heavyRain": "Heavy rain: avoid valleys and low ground, and heed rockfall and landslide notices.",
+        "strongWind": "Strong wind: stay clear of signboards and coastal rocks — most sea activities will close.",
+        "heat": "Heat: temperatures are very high. Drink often and avoid going out at midday.",
+        "fog": "Fog: low visibility delays ferries and flights, and ruins the view.",
+        "snowIce": "Snow and ice: paths are slippery. Watch your footing."
+      }
+    },
+    "footerNote": "This outlook is a frequently updated reference. The risk notes above are derived automatically from the forecast and are not official weather warnings — check official warnings and on-site notices before you travel.",
+    "unavailable": "The forecast could not be loaded right now. Please check again shortly."
+  },
+  "tide": {
+    "title": "Live tides and sea level",
+    "subtitle": "Daewangam Park faces the East Sea, where the water rises and falls roughly twice a day. Check the current sea level and the coming high and low tides before planning the suspension bridge and coastal deck walk.",
+    "now": "Current sea level",
+    "rising": "Rising tide",
+    "falling": "Falling tide",
+    "heightRef": "relative to mean sea level",
+    "levels": {
+      "low": "near low tide",
+      "mid": "mid tide",
+      "high": "near high tide"
+    },
+    "todayRange": "Today's tidal range",
+    "nextTitle": "Next high and low tide",
+    "nextHigh": "Next high tide",
+    "nextLow": "Next low tide",
+    "high": "High tide",
+    "low": "Low tide",
+    "inPre": "in ",
+    "inPost": "",
+    "hourUnit": "h ",
+    "minUnit": "min",
+    "todayTitle": "Today's tide times",
+    "forecastTitle": "7-day tide table",
+    "colDate": "Date",
+    "colHigh": "High tide",
+    "colLow": "Low tide",
+    "colRange": "Range",
+    "adviceTitle": "Tide safety notes",
+    "advice": [
+      "At high tide the sea covers some rocks and steps, and the rock surface near the waterline stays wet and slippery — do not climb on it.",
+      "Rocks exposed at low tide are still slippery and may hide shellfish or sea urchins; never walk on them barefoot.",
+      "Air pressure, strong wind and swell can raise the actual sea level well above the predicted height. Stay back from the water's edge when a typhoon or deep low approaches.",
+      "The heights shown are astronomical tide predictions. On site, always follow coastal safety signs and staff instructions."
+    ],
+    "footerNote": "Tide predictions are astronomical reference values. The real sea level is also shaped by air pressure, wind and swell, so times can shift earlier or later. Check local safety notices before setting out.",
+    "unavailable": "Tide data is temporarily unavailable. Please check again shortly."
+  },
+  "visitorServices": {
+    "title": "Visitor services and nearby amenities",
+    "subtitle": "The practical questions visitors ask most often about Daewangam Park, organised by category.",
+    "neutralNote": "This guide recommends no specific business or brand. It describes only the type of facility and its general location; fees and opening hours can change on site.",
+    "availability": {
+      "inPark": "In the park",
+      "nearby": "Walking distance",
+      "shortDrive": "5–10 min drive",
+      "city": "City centre"
+    },
+    "groups": [
+      { "icon": "🚻", "title": "Restrooms (WC)", "status": "inPark", "items": ["Public restrooms stand at the car park and the main trail entrances.", "Further restrooms are placed along the deck section towards the bridge.", "Wheelchair-accessible restrooms are included."] },
+      { "icon": "🅿️", "title": "Parking", "status": "inPark", "items": ["Use the public car park at the park entrance.", "Accessible bays and EV charging bays are separately marked.", "On weekends and in peak season the car park fills by late morning — arriving early helps."], "note": "Fees and opening hours can vary with season and events." },
+      { "icon": "🍽️", "title": "Food and drink", "status": "shortDrive", "items": ["Simple kiosks and drink vendors operate inside the park.", "Local restaurants and cafés cluster in the nearby coastal shopping strip.", "Waiting times lengthen around lunch."], "note": "No specific venue is named; check hygiene and prices before you buy." },
+      { "icon": "🏨", "title": "Lodging", "status": "shortDrive", "items": ["Hotels, motels, guesthouses and pension-style stays are spread across Dong-gu and the city centre.", "If sunrise photography is the goal, walking-distance lodgings near the park are best.", "Peak season and public holidays need early booking."] },
+      { "icon": "🛒", "title": "Convenience stores and markets", "status": "nearby", "items": ["Convenience-store types are found near the car park and in residential blocks.", "Large supermarkets and traditional markets need a short drive.", "Buying water, snacks and a rain poncho before arriving is easier."] },
+      { "icon": "⛽", "title": "Fuel and charging", "status": "shortDrive", "items": ["Petrol and diesel stations sit on the main approach roads.", "LPG stations are towards the city centre.", "Rapid EV chargers are installed at the public car park and in the city."] },
+      { "icon": "♿", "title": "Accessibility", "status": "inPark", "items": ["Ramps and level decks run along the main routes.", "Braille signage and wheelchair-accessible restrooms are provided.", "Ask the visitor information desk about wheelchair and stroller loans."] },
+      { "icon": "👶", "title": "With infants", "status": "inPark", "items": ["A nursing room and nappy-changing table are provided in the restroom area.", "Level sections are stroller-friendly.", "Check the bridge width before taking a stroller across."] },
+      { "icon": "🏥", "title": "Medical and safety", "status": "shortDrive", "items": ["First-aid kits and AEDs are placed inside the park.", "Pharmacies and clinics are in the Dong-gu town centre.", "In an emergency call 119 (ambulance/fire) or 112 (police)."] },
+      { "icon": "🏧", "title": "Money and connectivity", "status": "nearby", "items": ["ATMs are available in convenience stores and near the car park.", "Mobile signal is good across the park.", "Ask the information desk about free public Wi-Fi."] },
+      { "icon": "🚰", "title": "Water and rest areas", "status": "inPark", "items": ["Drinking fountains are spaced along the trails.", "Shaded rest areas and benches sit at the main viewpoints.", "Lighting runs at night, though some sections stay dim."] },
+      { "icon": "🐕", "title": "Pets", "status": "inPark", "items": ["Leashes and immediate waste collection are required.", "Some decks and event zones may restrict entry.", "Dangerous breeds must follow the park's posted rules."] }
+    ],
+    "planningNote": "Facility availability varies with season, events and weather. Check the park information desk and official channels on the day of your visit."
+  },
+  "seasonalStrategy": {
+    "title": "Season-by-season visiting strategy",
+    "subtitle": "A seasonal summary that reads weather, sea and water quality, wildlife and natural conditions together. The same park shows a completely different face each season.",
+    "columns": {
+      "season": "Season",
+      "weather": "Weather (temp · rain · wind)",
+      "water": "Sea and water quality",
+      "wildlife": "Wildlife and nature",
+      "strategy": "Visiting strategy"
+    },
+    "rows": [
+      { "icon": "🌸", "season": "Spring (Mar–May)", "weather": "Average 6→18°C. Rainfall stays low for the year, but cold snaps, yellow dust and fine dust, and strong coastal wind are the variables.", "water": "Sea temperature 11–16°C and still cold; snowmelt and spring rain cause brief turbidity rises.", "wildlife": "Migration season brings more gulls and cormorants, while cliff wildflowers and fresh green begin.", "strategy": "Check dust and high-wind forecasts and bring a windbreaker. Weekday mornings are quietest." },
+      { "icon": "☀️", "season": "Summer (Jun–Aug)", "weather": "Average 22→29°C with high humidity. The monsoon (late June to mid-July), typhoon influence and localised downpours concentrate here.", "water": "Sea temperature 22–26°C, the year's highest; nutrients and turbidity rise briefly after monsoon and typhoons.", "wildlife": "Sea fog and jellyfish appear more often, and intertidal life is at its most active.", "strategy": "Aim for early morning or late evening, and check whether decks are closed when typhoon or swell warnings are issued." },
+      { "icon": "🍁", "season": "Autumn (Sep–Nov)", "weather": "Average 24→12°C. The clearest and most visible season with a wide day-night temperature swing; early-autumn typhoon remnants linger.", "water": "Sea temperature 15–23°C, comfortable for walking, with comparatively stable autumn water quality.", "wildlife": "Whale and dolphin migration overlaps with arriving migratory birds, raising the odds of marine wildlife sightings.", "strategy": "The best window for both photography and strolling. Sunset comes earlier — plan your return while it is still light." },
+      { "icon": "❄️", "season": "Winter (Dec–Feb)", "weather": "Average -2→8°C. Dry with a strong north-westerly monsoon; wind and wind-chill are a bigger issue than heavy snow.", "water": "Sea temperature 9–13°C and low; swell and wave-overtopping risk increase.", "wildlife": "Winter migratory birds (gulls and diving ducks) stay on, and you can watch waves reshape the shoreline.", "strategy": "Hat, gloves and scarf plus non-slip shoes are essential. Avoid icy sections and areas at risk of wave overtopping." }
+    ],
+    "sourceNote": "This table combines 30-year climate normals (1991–2020) with public data from Ulsan Metropolitan City and the Ministry of Environment as a reference. Actual weather varies year to year, so check the forecast before you visit."
+  },
+  "audienceRoutes": {
+    "title": "Recommended routes by visitor type",
+    "subtitle": "The best path changes with who you travel with and your stamina. Pick one of these three.",
+    "labels": {
+      "audience": "Best for",
+      "duration": "Duration",
+      "pace": "Effort",
+      "bestTime": "Best time",
+      "stops": "Route",
+      "tips": "Bring and note"
+    },
+    "routes": [
+      {
+        "icon": "👨‍👩‍👧",
+        "name": "Family and children",
+        "summary": "A gentle short loop that keeps restrooms and rest areas close, and is easy to cut short when the children tire.",
+        "audience": "Families with toddlers or primary-school children",
+        "duration": "About 2 hours (2.5 km round trip)",
+        "pace": "Gentle · almost no gradient",
+        "bestTime": "9–11 am",
+        "stops": ["Car park → visitor information desk to check restrooms and the nursing room", "Follow the level trail to the bridge entrance", "Cross the bridge and rest at the Daewangam viewing deck", "Snack at the kiosk and return the same way"],
+        "tips": ["Check the bridge width for strollers and use the bypass when it is busy.", "Hold children's hands and walk on the inside of the railing.", "Bring water, snacks, hats and a spare set of clothes."]
+      },
+      {
+        "icon": "📷",
+        "name": "Photography and nature study",
+        "summary": "A route built around the direction of light and the tide, framing the rock formations and the bridge at their best.",
+        "audience": "Photographers and travellers interested in nature and geology",
+        "duration": "About 3 hours",
+        "pace": "Moderate · includes steps and rock surfaces",
+        "bestTime": "From 40 minutes before sunrise, or one hour before sunset",
+        "stops": ["Arrive before sunrise and shoot first light over the rock formations", "Cross the bridge and shoot the park backlit from the far side", "Follow the coastal deck to study geological structures and wave-cut platforms", "Return to a viewpoint for sunset and blue hour"],
+        "tips": ["Set tripods clear of walkways and take care in strong wind.", "Confirm permitted zones and regulations before flying a drone.", "Carry a lens cloth for sea spray and mist."]
+      },
+      {
+        "icon": "♿",
+        "name": "Low-mobility and step-free",
+        "summary": "A short, comfortable route along ramps and level decks, with frequent rest stops.",
+        "audience": "Older visitors, wheelchair and mobility-aid users, and those recovering from illness",
+        "duration": "About 1 hour 30 minutes (1.2 km round trip)",
+        "pace": "Very gentle · many rest stops",
+        "bestTime": "10 am–3 pm (mildest temperatures)",
+        "stops": ["Accessible parking bay → step-free ramp entrance", "Follow the level deck to the viewpoint", "Rest and take in the view from the platform at the bridge entrance", "Return via the shaded rest area and drinking fountain"],
+        "tips": ["Ask the information desk first about wheelchair and stroller loans.", "The feels-like temperature drops sharply on windy days.", "Allow generous time for the round trip if you have a companion."]
+      }
+    ]
+  },
+  "visitRoutes": {
+    "title": "Suggested itineraries (half day and full day)",
+    "subtitle": "Standard routes for a first visit. Choose by how much time you have and how you are travelling.",
+    "labels": {
+      "duration": "Duration",
+      "bestFor": "Best for",
+      "timeline": "Hour-by-hour route"
+    },
+    "routes": [
+      {
+        "icon": "🌤️",
+        "name": "Half-day route",
+        "duration": "About 3–4 hours",
+        "bestFor": "Day visitors leaving the city in the morning and returning in the afternoon",
+        "timeline": [
+          { "time": "09:00", "text": "Arrive at the car park and check the map and restroom locations at the information desk" },
+          { "time": "09:20", "text": "Walk the coastal trail gently to the Daewangam rock formations" },
+          { "time": "10:10", "text": "Cross the suspension bridge and rest at the viewing deck" },
+          { "time": "11:00", "text": "Follow the coastal deck towards Ilsan Beach" },
+          { "time": "12:00", "text": "Lunch at the nearby shopping strip, then a coastal drive back" }
+        ],
+        "note": "If you use public transport, allow about 30 minutes of slack for bus intervals."
+      },
+      {
+        "icon": "🌅",
+        "name": "Full-day route",
+        "duration": "About 6–7 hours",
+        "bestFor": "Travellers who want to cover the whole Dong-gu coast from sunrise to sunset",
+        "timeline": [
+          { "time": "06:00", "text": "Arrive before sunrise and watch the sun rise over the rock formations" },
+          { "time": "07:30", "text": "Loop the park trails slowly, observing geology and vegetation" },
+          { "time": "09:30", "text": "Head towards Ulgi Lighthouse for the lighthouse and cliff views" },
+          { "time": "12:00", "text": "Lunch and rest near Ilsan Beach" },
+          { "time": "14:00", "text": "Drive the Dong-gu coast towards the Jangsaengpo whale culture district" },
+          { "time": "16:30", "text": "Take in the city and harbour from the Ulsan Bridge viewpoint" },
+          { "time": "18:00", "text": "Return to Daewangam Park for sunset and blue hour" }
+        ],
+        "note": "Distances are long, so a car or taxi is recommended. Watch UV exposure and dehydration in summer."
+      }
+    ],
+    "caveat": "These itineraries are examples based on average visit lengths. Adjust for actual opening hours, closed sections and traffic."
+  },
+  "responsibility": {
+    "title": "Understanding the site and visitor responsibility",
+    "subtitle": "Daewangam Park layers long geological processes with generations of human care. These principles pass the landscape on to the next generation.",
+    "groups": [
+      { "icon": "🌿", "title": "Protect nature", "items": ["Leave rocks, pebbles, shells and plants where they are. Collecting or moving them is not allowed.", "Stay on marked trails and decks; avoid scrambling on bare rock.", "Do not approach wild bird nests or habitats."] },
+      { "icon": "⚠️", "title": "Stay safe", "items": ["Do not climb onto cliff edges, breakwaters or tetrapods.", "The bridge and coastal decks may close under high-wind, swell or typhoon warnings.", "Some sections are dimly lit at night — carry a torch."] },
+      { "icon": "🏛️", "title": "Respect culture and facilities", "items": ["Do not damage or deface signage, monuments or sculptures.", "Keep noise down near residential areas late at night and early in the morning.", "Leave shared facilities clean for the next visitor."] },
+      { "icon": "📷", "title": "Photography etiquette", "items": ["Check permitted zones and regulations before flying a drone.", "Respect others' privacy and stop shooting if asked.", "Keep tripods and lighting gear out of the walkway."] },
+      { "icon": "♻️", "title": "Waste and climate", "items": ["Take personal waste away with you and use the recycling bins.", "Reduce single-use cups and bags; a reusable bottle is better.", "Dispose of cigarette butts only in designated spots — they are a fire risk."] },
+      { "icon": "🐕", "title": "Visiting with pets", "items": ["Leashes and immediate waste collection are required.", "Avoid crowded decks and event zones for safety.", "Check the park's pet rules before you arrive."] },
+      { "icon": "🔬", "title": "Understand the science", "items": ["The Daewangam rocks are the product of long wave erosion and geological structure.", "The coastline is still being reshaped by waves and tides.", "Recording what you observe can contribute to citizen-science data."] }
+    ],
+    "emergencyTitle": "In an emergency",
+    "emergencyBody": "Call 119 (ambulance/fire) or 112 (police), and when describing your location give a visible landmark such as the car park, the suspension bridge or a viewing deck. Checking the Plus Code in your phone map speeds up the handover.",
+    "pledge": "This view does not belong to one generation. Leave footprints and take everything else home, and this coast reaches the next generation unchanged."
   }
 }

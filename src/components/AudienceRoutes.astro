@@ -1,0 +1,101 @@
+---
+import { getI18n } from '../i18n/ui';
+
+const { messages } = getI18n(Astro.url);
+const s = messages.audienceRoutes ?? {};
+const labels = s.labels ?? {};
+const routes = Array.isArray(s.routes) ? s.routes : [];
+---
+
+<section id="audience" class="section-padding" style="background: var(--bg-secondary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">
+      {s.title}
+    </h2>
+    {s.subtitle && (
+      <p class="text-center text-base sm:text-lg mb-10 max-w-3xl mx-auto" style="color: var(--text-secondary);">
+        {s.subtitle}
+      </p>
+    )}
+
+    <div class="grid gap-6 lg:grid-cols-3">
+      {routes.map((route: any) => (
+        <article
+          class="rounded-3xl border p-6 flex flex-col"
+          style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);"
+        >
+          <div class="text-3xl mb-3" aria-hidden="true">{route.icon}</div>
+          <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--text-primary);">{route.name}</h3>
+          {route.summary && (
+            <p class="text-sm leading-relaxed mb-5" style="color: var(--text-secondary);">{route.summary}</p>
+          )}
+
+          <dl class="space-y-3 text-sm mb-5">
+            {route.audience && (
+              <div class="flex gap-3">
+                <dt class="shrink-0 w-20 font-medium" style="color: var(--text-muted);">{labels.audience}</dt>
+                <dd style="color: var(--text-primary);">{route.audience}</dd>
+              </div>
+            )}
+            {route.duration && (
+              <div class="flex gap-3">
+                <dt class="shrink-0 w-20 font-medium" style="color: var(--text-muted);">{labels.duration}</dt>
+                <dd style="color: var(--text-primary);">{route.duration}</dd>
+              </div>
+            )}
+            {route.pace && (
+              <div class="flex gap-3">
+                <dt class="shrink-0 w-20 font-medium" style="color: var(--text-muted);">{labels.pace}</dt>
+                <dd style="color: var(--text-primary);">{route.pace}</dd>
+              </div>
+            )}
+            {route.bestTime && (
+              <div class="flex gap-3">
+                <dt class="shrink-0 w-20 font-medium" style="color: var(--text-muted);">{labels.bestTime}</dt>
+                <dd style="color: var(--text-primary);">{route.bestTime}</dd>
+              </div>
+            )}
+          </dl>
+
+          {(route.stops ?? []).length > 0 && (
+            <div class="mb-5">
+              <h4 class="text-xs font-semibold uppercase tracking-wide mb-3" style="color: var(--text-muted);">
+                {labels.stops}
+              </h4>
+              <ol class="space-y-2 text-sm leading-relaxed">
+                {route.stops.map((stop: string, i: number) => (
+                  <li class="flex gap-3" style="color: var(--text-secondary);">
+                    <span
+                      class="shrink-0 w-6 h-6 rounded-full text-[11px] font-bold flex items-center justify-center"
+                      style="background: var(--tag-bg); color: var(--tag-text);"
+                      aria-hidden="true"
+                    >
+                      {i + 1}
+                    </span>
+                    <span>{stop}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+
+          {(route.tips ?? []).length > 0 && (
+            <div class="mt-auto pt-5 border-t" style="border-color: var(--border-color);">
+              <h4 class="text-xs font-semibold uppercase tracking-wide mb-3" style="color: var(--text-muted);">
+                {labels.tips}
+              </h4>
+              <ul class="space-y-2 text-sm leading-relaxed" style="color: var(--text-secondary);">
+                {route.tips.map((tip: string) => (
+                  <li class="flex gap-2">
+                    <span aria-hidden="true" style="color: var(--accent);">✦</span>
+                    <span>{tip}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

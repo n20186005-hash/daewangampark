@@ -1,0 +1,68 @@
+---
+import { getLangFromUrl, getMessagesByLang } from '../i18n/ui';
+import { getWeather, weatherCodeInfo } from '../lib/weather';
+
+interface Props {
+  part: 'pills' | 'planner';
+  lang?: string;
+}
+
+const lang = Astro.props.lang || getLangFromUrl(Astro.url);
+const messages = getMessagesByLang(lang);
+const live = messages.hero?.liveInfo ?? {};
+const planner = messages.hero?.sunsetPlanner ?? {};
+
+// Same cached server-side call the weather module uses, so the hero shows live
+// values without the browser ever talking to a third party.
+const data = await getWeather();
+const now = data?.current ?? null;
+const today = data?.days?.[0] ?? null;
+
+const condition = (code: number) =>
+  messages.weather?.conditions?.[weatherCodeInfo(code).key] ?? '—';
+
+/**
+ * Sunrise and sunset are normalised to a local wall-clock "HH:MM" upstream.
+ * Working in minutes of the day keeps the offsets free of timezone drift.
+ */
+const minutesOfDay = (value: string): number | null => {
+  const match = /^(\d{1,2}):(\d{2})$/.exec((value ?? '').trim());
+  if (!match) return null;
+  const hours = Number(match[1]);
+  const minutes = Number(match[2]);
+  if (hours > 23 || minutes > 59) return null;
+  return hours * 60 + minutes;
+};
+
+const clock = (minutes: number) => {
+  const wrapped = ((minutes % 1440) + 1440) % 1440;
+  const hours = String(Math.floor(wrapped / 60)).padStart(2, '0');
+  const mins = String(wrapped % 60).padStart(2, '0');
+  return `${hours}:${mins}`;
+};
+
+const sunsetMinutes = minutesOfDay(today?.sunset ?? '');
+const sunsetLabel = sunsetMinutes === null ? '—' : clock(sunsetMinutes);
+const arriveLabel = sunsetMinutes === null ? '—' : clock(sunsetMinutes - 60);
+const blueHourLabel = sunsetMinutes === null ? '—' : `${clock(sunsetMinutes)}–${clock(sunsetMinutes + 30)}`;
+
+const weatherLabel = now ? `${condition(now.weatherCode)} ${Math.round(now.temperature)}°C` : '—';
+---
+
+{Astro.props.part === 'pills' ? (
+  <>
+    <span class="live-pill">🌤️ {live.weather}：<span class="live-value">{weatherLabel}</span></span>
+    <span class="live-pill">🌅 {live.sunset}：<span class="live-value">{sunsetLabel}</span></span>
+  </>
+) : (
+  <>
+    <div class="rounded-2xl px-4 py-3" style="background: rgba(15,32,21,0.28);">
+      <p class="text-xs uppercase tracking-[0.18em] text-white/65">{planner.arriveLabel}</p>
+      <p class="text-xl font-semibold text-white mt-1">{arriveLabel}</p>
+    </div>
+    <div class="rounded-2xl px-4 py-3" style="background: rgba(15,32,21,0.28);">
+      <p class="text-xs uppercase tracking-[0.18em] text-white/65">{planner.blueHourLabel}</p>
+      <p class="text-xl font-semibold text-white mt-1">{blueHourLabel}</p>
+    </div>
+  </>
+)}

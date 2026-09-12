@@ -1,0 +1,64 @@
+---
+import { getI18n } from '../i18n/ui';
+
+const { messages } = getI18n(Astro.url);
+const s = messages.responsibility ?? {};
+const groups = Array.isArray(s.groups) ? s.groups : [];
+---
+
+<section id="responsibility" class="section-padding" style="background: var(--bg-secondary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">
+      {s.title}
+    </h2>
+    {s.subtitle && (
+      <p class="text-center text-base sm:text-lg mb-10 max-w-3xl mx-auto" style="color: var(--text-secondary);">
+        {s.subtitle}
+      </p>
+    )}
+
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {groups.map((group: any) => (
+        <article
+          class="rounded-2xl border p-5"
+          style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);"
+        >
+          <h3 class="font-semibold text-base mb-3 flex items-center gap-2" style="color: var(--text-primary);">
+            <span aria-hidden="true" class="text-xl leading-none">{group.icon}</span>
+            {group.title}
+          </h3>
+          <ul class="space-y-2 text-sm leading-relaxed" style="color: var(--text-secondary);">
+            {(group.items ?? []).map((item: string) => (
+              <li class="flex gap-2">
+                <span aria-hidden="true" style="color: var(--accent);">✓</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+
+    {s.emergencyTitle && (
+      <div
+        class="mt-8 rounded-2xl border p-6"
+        style="background: var(--bg-tertiary); border-color: var(--border-color);"
+      >
+        <h3 class="font-semibold text-base mb-2 flex items-center gap-2" style="color: var(--text-primary);">
+          <span aria-hidden="true">🚑</span>
+          {s.emergencyTitle}
+        </h3>
+        <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{s.emergencyBody}</p>
+      </div>
+    )}
+
+    {s.pledge && (
+      <blockquote
+        class="mt-6 rounded-2xl border-l-4 p-6 text-sm leading-relaxed italic"
+        style="background: var(--bg-tertiary); border-color: var(--accent); color: var(--text-secondary);"
+      >
+        {s.pledge}
+      </blockquote>
+    )}
+  </div>
+</section>
