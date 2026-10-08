@@ -24,6 +24,7 @@ import NearbyLandmarks from '../../components/NearbyLandmarks.astro';
 import SourcesSection from '../../components/SourcesSection.astro';
 import { getI18n, languagesList } from '../../i18n/ui';
 import { place } from '../../config';
+import { guideNav, guideUi, guideTopics } from '../../i18n/guides';
 
 export function getStaticPaths() {
   return languagesList.map((lang) => ({ params: { lang } }));
@@ -83,6 +84,21 @@ const webPageLd = {
   <Hero lang={lang} />
   <QuickFactsDashboard />
   <Intro />
+  <section class="section-padding" style="background: var(--bg-secondary);">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="font-display text-2xl sm:text-3xl font-semibold mb-2 text-center" style="color: var(--text-primary);">{guideUi[lang].stripHeading}</h2>
+      <p class="text-center text-sm mb-8" style="color: var(--text-muted);">{guideUi[lang].stripSubtitle}</p>
+      <div class="grid sm:grid-cols-3 gap-4">
+        {guideTopics.map((t) => (
+          <a href={`/${lang}/${t}/`} class="rounded-2xl p-5 border hover:opacity-80" style="background: var(--card-bg); border-color: var(--border-color);">
+            <div class="text-2xl mb-2">{guideNav[lang][t].icon}</div>
+            <div class="font-semibold" style="color: var(--text-primary);">{guideNav[lang][t].label}</div>
+            <div class="text-sm mt-1" style="color: var(--text-secondary);">{guideNav[lang][t].desc}</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
   <HumanitiesDossier />
   <DeepDive />
   <Transport />

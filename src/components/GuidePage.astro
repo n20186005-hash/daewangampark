@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  guides,
+  guideNav,
+  guideUi,
+  guideTopics,
+  type GuideTopic,
+  type GuideLang,
+} from '../i18n/guides';
+
+interface Props {
+  lang: GuideLang;
+  topic: GuideTopic;
+}
+const { lang, topic } = Astro.props;
+const c = guides[topic][lang];
+const ui = guideUi[lang];
+const nav = guideNav[lang];
+const homeHref = `/${lang}/`;
+const others = guideTopics.filter((t) => t !== topic);
+const related = others.map((t) => ({
+  href: `/${lang}/${t}/`,
+  label: nav[t].label,
+}));
+const facts = c.facts ?? [];
+const sections = (c.sections ?? []).map((s) => ({
+  heading: s.heading,
+  body: s.body ?? [],
+  list: s.list ?? [],
+}));
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: c.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<BaseLayout title={c.title} description={c.description} path={topic}>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(faqLd)}></script>
+
+  <article class="section-padding" style="background: var(--bg-secondary);">
+    <div class="max-w-3xl mx-auto px-4">
+      <a href={homeHref} class="text-sm hover:opacity-70" style="color: var(--accent);">{ui.back}</a>
+      <h1 class="font-display text-3xl sm:text-4xl font-semibold mt-4 mb-3" style="color: var(--text-primary);">
+        {c.title}
+      </h1>
+      <p class="text-base sm:text-lg leading-relaxed mb-10" style="color: var(--text-secondary);">{c.intro}</p>
+
+      {facts.length > 0 && (
+        <section class="mb-10">
+          <h2 class="font-display text-2xl font-semibold mb-4" style="color: var(--text-primary);">{ui.keyFacts}</h2>
+          <ul class="space-y-3">
+            {facts.map((f) => (
+              <li class="rounded-xl p-4 border" style="background: var(--card-bg); border-color: var(--border-color);">
+                <span class="font-semibold" style="color: var(--text-primary);">{f.label}:</span>
+                <span style="color: var(--text-secondary);">{f.value}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {sections.map((s) => (
+        <section class="mb-10">
+          <h2 class="font-display text-2xl font-semibold mb-4" style="color: var(--text-primary);">{s.heading}</h2>
+          {s.body.map((p) => (
+            <p class="text-base leading-relaxed mb-4" style="color: var(--text-secondary);">{p}</p>
+          ))}
+          <ul class="space-y-3" style="color: var(--text-secondary);">
+            {s.list.map((b) => (
+              <li class="leading-relaxed">
+                • <strong style="color: var(--text-primary);">{b.strong}</strong> {b.text}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+
+      <section class="mb-10">
+        <h2 class="font-display text-2xl font-semibold mb-4" style="color: var(--text-primary);">{ui.faq}</h2>
+        <div class="space-y-4">
+          {c.faqs.map((f) => (
+            <div class="rounded-xl p-5 border" style="background: var(--card-bg); border-color: var(--border-color);">
+              <h3 class="font-semibold mb-1" style="color: var(--text-primary);">{f.q}</h3>
+              <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{f.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 class="font-display text-xl font-semibold mb-4" style="color: var(--text-primary);">{ui.related}</h2>
+        <div class="grid sm:grid-cols-2 gap-3">
+          {related.map((r) => (
+            <a
+              href={r.href}
+              class="rounded-xl p-4 border hover:opacity-80"
+              style="background: var(--card-bg); border-color: var(--border-color); color: var(--text-primary);"
+            >
+              → {r.label}
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+  </article>
+</BaseLayout>

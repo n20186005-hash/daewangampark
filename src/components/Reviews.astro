@@ -9,6 +9,9 @@ const stars = (n) => Array.from({ length: 5 }, (_, i) => i < n ? 'star-filled' :
   <div class="max-w-4xl mx-auto px-4">
     <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">{r.title}</h2>
     <p class="text-center text-base mb-10" style="color: var(--text-secondary);">{r.declaration}</p>
+    {r.ratingNote && (
+      <p class="text-center text-sm mb-8" style="color: var(--text-muted);">★ {r.ratingNote}</p>
+    )}
 
     <div class="grid md:grid-cols-2 gap-6">
       {r.items.map((item) => (

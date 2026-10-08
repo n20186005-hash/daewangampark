@@ -10,9 +10,11 @@ interface Props {
   title: string;
   description: string;
   path?: string;
+  noindex?: boolean;
+  singleLang?: boolean;
 }
 
-const { title, description, path = '' } = Astro.props;
+const { title, description, path = '', noindex = false, singleLang = false } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const htmlLang = htmlLangAttr(lang);
 const alts = buildAlternates(path);
@@ -81,7 +83,7 @@ const jsonLd = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.6',
-    reviewCount: '5419',
+    reviewCount: '5432',
   },
   sameAs: [
     place.mapsShareUrl,
@@ -113,11 +115,16 @@ const jsonLd = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="zh" href={alts.zh} />
-    <link rel="alternate" hreflang="en" href={alts.en} />
-    <link rel="alternate" hreflang="ja" href={alts.ja} />
-    <link rel="alternate" hreflang="ko" href={alts.ko} />
-    <link rel="alternate" hreflang="x-default" href={alts.xDefault} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    {!singleLang && (
+      <>
+        <link rel="alternate" hreflang="zh" href={alts.zh} />
+        <link rel="alternate" hreflang="en" href={alts.en} />
+        <link rel="alternate" hreflang="ja" href={alts.ja} />
+        <link rel="alternate" hreflang="ko" href={alts.ko} />
+        <link rel="alternate" hreflang="x-default" href={alts.xDefault} />
+      </>
+    )}
 
     <!-- Geo / entity meta: bind the page to one physical attraction -->
     <meta name="geo.region" content="KR-31" />
