@@ -1,1 +1,7 @@
-/  /ko/  302
+# Canonical host is the non-www apex over HTTPS.
+http://www.daewangampark.com/* https://daewangampark.com/:splat 301
+https://www.daewangampark.com/* https://daewangampark.com/:splat 301
+http://daewangampark.com/* https://daewangampark.com/:splat 301
+
+# Root → Korean default locale (kept after the host-normalising rules above)
+/ /ko/ 302

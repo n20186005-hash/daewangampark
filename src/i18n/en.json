@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Daewangam Park Ulsan: Suspension Bridge, Hours & Directions",
+    "title": "Daewangam Park (Ulsan) – Bridge Hours, Admission & Directions",
     "description": "Plan your visit to Daewangam Park in Ulsan. Explore the 303 m sea suspension bridge (출렁다리), opening hours, coastal trails, parking and directions."
   },
   "header": {
@@ -497,32 +497,7 @@
         "source": "Family · Daegu"
       }
     ],
-    "items": [
-      {
-        "name": "Minjun",
-        "date": "May 2026",
-        "rating": 5,
-        "text": "Visited at dawn; the bridge backlit is super photogenic, and the bridge centre was silent — strongly recommend sunrise for the best light."
-      },
-      {
-        "name": "Seoyeon",
-        "date": "Apr 2026",
-        "rating": 5,
-        "text": "The 303 m bridge composition is stunning; about 20 min walk from Ilsan. Ulsan is windy by the sea — bring a jacket."
-      },
-      {
-        "name": "Jihun",
-        "date": "Mar 2026",
-        "rating": 4,
-        "text": "Great as free public space; weekends get crowded — weekdays or early morning are more comfortable."
-      },
-      {
-        "name": "Ha-eun",
-        "date": "Feb 2026",
-        "rating": 5,
-        "text": "About 20 min by bus from Ilsan to the park; the pine and coast along the way are pleasant for a half-day stroll."
-      }
-    ]
+    "items": []
   },
   "mapSection": {
     "title": "How to get here",
@@ -724,7 +699,7 @@
           },
           {
             "q": "How long is the Daewangam suspension bridge, and when can I cross it?",
-            "a": "The sea suspension bridge (출렁다리) is 303 m long — Ulsan's first sea bridge — and crossing it is free, like the park itself, which stays open 24 hours. In strong wind, heavy rain or thunderstorms it may close temporarily for safety."
+            "a": "The sea suspension bridge (출렁다리) is 303 m long — Ulsan's first sea-crossing pedestrian bridge — and crossing it is free. Unlike the park, which is open 24 hours, the bridge keeps its own daytime hours: 09:00–18:00, last entry 17:40, closing on the 2nd Tuesday of every month. In strong wind, heavy rain or thunderstorms it may also close temporarily for safety."
           },
           {
             "q": "Where and when can I watch the sunrise?",

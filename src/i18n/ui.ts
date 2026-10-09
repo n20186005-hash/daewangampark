@@ -36,7 +36,9 @@ export function getI18n(url: URL) {
 export function buildAlternates(path = ''): Record<string, string> {
   const base = 'https://daewangampark.com';
   const clean = path.replace(/^\/+/, '').replace(/\/+$/, '');
-  const mk = (l: string) => `${base}/${l}${clean ? '/' + clean : ''}`;
+  // Always emit a trailing slash so canonical/hreflang URLs match the static
+  // directory index that Cloudflare actually serves (e.g. /en/, /en/suspension-bridge/).
+  const mk = (l: string) => `${base}/${l}/${clean ? clean + '/' : ''}`;
   return {
     zh: mk('zh'),
     en: mk('en'),
